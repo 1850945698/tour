@@ -1,0 +1,38 @@
+/*轮播*/
+.content{
+	width: 100%;
+	overflow: hidden;
+}
+.content .scroll {
+	width: 1349px;
+	overflow: hidden;
+			
+}
+.content .scroll .container {
+	width: 9000px;
+}
+ .scroll .container div{
+	float: left;
+	height: 451px;
+	width: 1349px;
+	position: relative;
+}
+.scroll .container img{
+	width: 1380px;
+}
+.scroll .container  .title{
+	display:block;
+	position: absolute;
+	background: #333333;
+	opacity: 0.5;
+	width: 600px;
+	height: 54px;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	line-height: 49px;
+	z-index: 3;
+	margin-left: 352px;
+	margin-top:338px;
+	
+}
