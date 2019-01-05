@@ -1,0 +1,10 @@
+
+html{
+	font-size: 14px;
+}
+
+.header .logo .logoimg{
+	background: url(../img/pic/logo.png) no-repeat;
+	width: 100px;
+	height: 100px;
+}
