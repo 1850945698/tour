@@ -1,4 +1,7 @@
 /*轮播*/
+*{
+	list-style: none;
+}
 .content{
 	width: 100%;
 	overflow: hidden;
@@ -17,14 +20,24 @@
 	width: 1349px;
 	position: relative;
 }
-.scroll .container img{
-	width: 1380px;
-}
-.scroll .container  .title{
+
+.scroll .container  .title .span1{
 	display:block;
 	position: absolute;
-	background: #333333;
-	opacity: 0.5;
+	width: 600px;
+	height: 54px;
+	color: #fff;
+	font-size: 63px;
+	text-align: center;
+	line-height: 49px;
+	z-index: 3;
+	margin-left: 352px;
+	margin-top:-288px;
+	
+}
+.scroll .container  .title .span2{
+	display:block;
+	position: absolute;
 	width: 600px;
 	height: 54px;
 	color: #fff;
@@ -32,7 +45,88 @@
 	text-align: center;
 	line-height: 49px;
 	z-index: 3;
-	margin-left: 352px;
-	margin-top:338px;
+	margin-left: 5px;
+	margin-top:21px;
+}
+/*目的地推荐*/
+.mddtj{
+	position: absolute;
+	background: #f4f4f4;
+	height: 828px;
+	width: 100%;
+	margin-top: -83px;
+}
+.mddtj .wrap{
+	position: relative;
+	margin: 0 auto;
+	margin-top: 35px;
+	width: 1200px;
+}
+.mddtj .wrap .title h2{
+	font-weight: normal;
+	font-size: 26px;
+	font-family: "微软雅黑";
+	color: #333;
+}
+.mddtj .wrap .title .lf{
+	float: left;
+}
+.wrap .title ul{
+	position: relative;
+	top: -16px;
+	list-style: none;
+}
+.wrap .rt{
+	float: right;
+}
+.wrap .title_tab{
+	position: relative;
+	height: 26px;
+	line-height: 26px;
+	color: #666;
+}
+.wrap .tit_vline{
+	color: #666;
+}
+.wrap .current .title_tab{
+	background: #3cb0d0;
+	color: #fff;
+	border-radius: 3px;
+	padding: 5px 9px;
+	margin-left: -6px;
+}
+.wrap .list{
+	margin-left: -20px;
+	margin-top: 10px;
+	height: 433px;
+	overflow: hidden;
+}
+.wrap .list_bg{
+	position: relative;
+	margin: 20px 0 0 20px;
+	background: #fff;
+	width: 486px;
+}
+.wrap .city_name{
+	display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.wrap .city_name .name{
+	text-decoration: none;
+    font-size: 20px;
+    bottom: 43px;
+    position: absolute;
+    left: 207px;
+    color: #fff;
 	
+}
+.wrap .detail{
+	position: relative;
+    text-align: center;
+    line-height: 36px;
+    height: 36px;
+    overflow: hidden;
+    color: #999;
 }
