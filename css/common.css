@@ -2,9 +2,143 @@
 html{
 	font-size: 14px;
 }
-
-.header .logo .logoimg{
+/*顶部logo*/
+.header .left .logoimg{
 	background: url(../img/pic/logo.png) no-repeat;
 	width: 100px;
 	height: 100px;
+	position: absolute;
+	left: 316px;
+	top: 4px;
+	
+}
+.header .left .logotitle{
+	font-size: 2.5em;
+	font-family: "华文行楷";
+	font-weight: 90;
+	margin-left: 245px;
+	margin-top: 43px;
+	font-style: normal;
+}
+.header .left .english{
+	font-size: 0.75em;
+	font-family: arial;
+	margin-left: 247px;
+	margin-top: -2px;
+	color: grey;
+}
+/*顶部右侧导航 搜索 */
+.header .right .nav{
+	margin-left: 392px;
+	margin-top: -3px;
+}
+.header .right .nav ul li{
+	float: left;
+	list-style: none;
+	padding-left: 50px;
+}
+.header .right .nav a{
+	color: black;
+	text-decoration: none;
+	font-family: "华文细黑";
+	font-weight: bold;
+	font-size: 16px;
+}
+.header .right .nav a:hover{
+	color: #1BADB6;
+}
+.header .right .dlzc{
+	margin-left: 940px;
+	margin-top: -33px;
+	position: absolute;
+}
+.header .right .dlzc a{
+	color: #1BADB6;
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+.header .right .inss{
+	height: 30px;
+	width: 120px;
+	margin-left: 12px;
+}
+
+
+.header .right .ssk{
+	margin-left: 900px;
+	margin-top: -37px;
+}
+.header .right .sskuang{
+	text-align: center;
+	font-size: 12px;
+	width: 150px;
+	height: 27px;
+	border: 1px solid #1badb6;
+}
+.header .right .ssa{
+	margin-left: 1052px;
+	margin-top: -29px;
+}
+.header .right .ssbtn{
+	background: url(../img/pic/ss.png)#1BADB6  0 0 no-repeat;
+	width: 40px;
+	height: 29px;
+	border: 1px solid #1badb6;
+}
+/*顶部主导航栏*/
+.header .mainnav{
+	background: #1BADB6;
+	width: 1369px;
+	height: 50px;
+	margin-top: 11px;
+}
+.header .mainnav li{
+	float: left;
+	line-height: 46px;
+	list-style: none;
+	margin-left: 205px;
+}
+.header .mainnav .now{
+	background: #0D9199;
+	height: 50px;
+	width: 107px;
+	padding-left: 45px;
+}
+.header .mainnav img{
+	background-repeat: no-repeat;
+    margin-top: 9px;
+    margin-left: -28px;
+    position: absolute;
+}
+.header .mainnav a{
+	text-decoration: none;
+	font-size: 18px;
+	color: #ffff;
+}
+/*底部*/
+.footer .boundary{
+	border: 1px solid #1BADB6;
+    width: 1050px;
+    margin-top: 438px;
+    margin-left: 139px;
+}
+.footer .links{
+	margin-left: 439px;
+    margin-top: 18px;
+}
+.footer .links a, .copyright span{
+    color: #999;
+    display: inline-block;
+    height: 22px;
+    line-height: 22px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.footer .links a:hover{
+	color: #f60;
+}
+.footer .copyright {
+    padding: 11px 324px 0;
+    line-height: 22px;
+    margin: 12px;
 }
