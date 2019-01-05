@@ -71,6 +71,9 @@
 .mddtj .wrap .title .lf{
 	float: left;
 }
+.left{
+	float: left;
+}
 .wrap .title ul{
 	position: relative;
 	top: -16px;
@@ -101,10 +104,13 @@
 	height: 433px;
 	overflow: hidden;
 }
-.wrap .list_bg{
+.wrap .list_bg, .wrap .list_small{
 	position: relative;
 	margin: 20px 0 0 20px;
 	background: #fff;
+	float: left;
+}
+.list_bg{
 	width: 486px;
 }
 .wrap .city_name{
