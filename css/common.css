@@ -36,6 +36,7 @@ html{
 	float: left;
 	list-style: none;
 	padding-left: 50px;
+	margin-top: -9px;
 }
 .header .right .nav a{
 	color: black;
@@ -44,7 +45,27 @@ html{
 	font-weight: bold;
 	font-size: 16px;
 }
+.header .right .nav .me{
+	margin-left: -79px;
+	margin-top: 9px;
+	
+}
+.header .right .nav .me a{
+	display: none;
+	font-weight: normal;
+	color:black ;
+	font-family: "微软雅黑";
+	font-size: 14px;
+}
+.header .right .nav .me a:hover{
+	color: #0D9199;
+	text-decoration: underline;
+}
+.header .right .nav .me li{
+	padding-left: 25px;
+}
 .header .right .nav a:hover{
+	
 	color: #1BADB6;
 }
 .header .right .dlzc{
