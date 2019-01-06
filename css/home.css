@@ -249,8 +249,10 @@
     cursor: pointer;
     margin-top: -50px;
     margin-left: 540px;
-    width: 30px;
+    width: 40px;
+    height: 40px;
     z-index: 99;
+    background: #FFFFFF;
 }
 #gotoTop:hover{
 	border: 1px solid #0D9199;
