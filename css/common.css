@@ -146,14 +146,16 @@ html{
 /*底部*/
 
 .footer .boundary{
+	position: absolute;
 	border: 1px solid #1BADB6;
     width: 1050px;
-    margin-top: 438px;
-    margin-left: 139px;
+    top: 1443px;
+    left: 139px;
 }
 .footer .links{
-	margin-left: 439px;
-    margin-top: 18px;
+	position: absolute;
+	left: 439px;
+    top: 1469px;
 }
 .footer .links a, .copyright span{
     color: #999;
@@ -167,7 +169,8 @@ html{
 	color: #f60;
 }
 .footer .copyright {
-    padding: 11px 324px 0;
+	position: absolute;
     line-height: 22px;
-    margin: 12px;
+    top: 1513px;
+    left: 320px;
 }
