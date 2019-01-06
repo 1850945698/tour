@@ -3,13 +3,17 @@ html{
 	font-size: 14px;
 }
 /*顶部logo*/
+.header .left{
+	float: left;
+	margin-left: -85px;
+}
 .header .left .logoimg{
 	background: url(../img/pic/logo.png) no-repeat;
 	width: 100px;
 	height: 100px;
 	position: absolute;
-	left: 316px;
-	top: 4px;
+	left: 231px;
+	top: 1px;
 	
 }
 .header .left .logotitle{
@@ -29,8 +33,9 @@ html{
 }
 /*顶部右侧导航 搜索 */
 .header .right .nav{
-	margin-left: 392px;
-	margin-top: -3px;
+	left: 277px;
+	top: 57px;
+	position: absolute;
 }
 .header .right .nav ul li{
 	float: left;
@@ -69,8 +74,8 @@ html{
 	color: #1BADB6;
 }
 .header .right .dlzc{
-	margin-left: 940px;
-	margin-top: -33px;
+	left: 949px;
+	top: 13px;
 	position: absolute;
 }
 .header .right .dlzc a{
@@ -86,19 +91,21 @@ html{
 
 
 .header .right .ssk{
-	margin-left: 900px;
-	margin-top: -37px;
+	left: 916px;
+	top: 48px;
+	position: absolute;
 }
 .header .right .sskuang{
 	text-align: center;
 	font-size: 12px;
-	width: 150px;
+	width: 225px;
 	height: 27px;
 	border: 1px solid #1badb6;
 }
 .header .right .ssa{
-	margin-left: 1052px;
-	margin-top: -29px;
+	left: 1143px;
+    top: 48px;
+    position: absolute;
 }
 .header .right .ssbtn{
 	background: url(../img/pic/ss.png)#1BADB6  0 0 no-repeat;
@@ -111,7 +118,7 @@ html{
 	background: #1BADB6;
 	width: 1369px;
 	height: 50px;
-	margin-top: 11px;
+	margin-top: 71px;
 }
 .header .mainnav li{
 	float: left;
