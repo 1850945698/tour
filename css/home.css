@@ -56,13 +56,13 @@
 	width: 100%;
 	margin-top: -83px;
 }
-.mddtj .wrap{
+.wrap{
 	position: relative;
 	margin: 0 auto;
 	margin-top: 35px;
 	width: 1200px;
 }
-.mddtj .wrap .title h2{
+.wrap .title h2{
 	font-weight: normal;
 	font-size: 26px;
 	font-family: "微软雅黑";
@@ -135,4 +135,54 @@
     height: 36px;
     overflow: hidden;
     color: #999;
+}
+/*周边游*/
+.around{
+	top: 1050px;
+    position: absolute;
+    left: 77px;
+}
+.around .wrap {
+    padding-bottom: 45px;
+}
+.around .title {
+    position: relative;
+    z-index: 100;
+}
+.around .select {
+    position: relative;
+    top: -28px;
+    width: 94px;
+    height: 24px;
+    left: 109px;
+    border: 1px solid #e8e8e8;
+    background-color: #fff;
+}
+.around .title ul{
+	position: relative;
+	top: 18px;
+}
+.around .select .opt {
+    position: absolute;
+    padding: 10px 0 10px 10px;
+    font-size: 12px;
+    top: 25px;
+    width: 384px;
+    list-style: none;
+    border: 1px solid #63c3d6;
+    background-color: #fff;
+}
+.around .select .opt_item {
+    float: left;
+    width: 48px;
+    line-height: 30px;
+    cursor: pointer;
+}
+.opt_item a, .opt_item a:hover {
+    display: block;
+    color: #333;
+    text-decoration: none;
+}
+.opt_item a:hover, .opt_item a.current {
+    color: #3cb0d0;
 }
