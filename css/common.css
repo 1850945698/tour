@@ -53,10 +53,10 @@ html{
 .header .right .nav .me{
 	margin-left: -79px;
 	margin-top: 9px;
-	
+	display: none;
 }
 .header .right .nav .me a{
-	display: none;
+	
 	font-weight: normal;
 	color:black ;
 	font-family: "微软雅黑";

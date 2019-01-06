@@ -1,21 +1,18 @@
 window.onload = function(){
 	/*导航栏*/
-	 var nav = document.getElementById("nav");
-    var aList = nav.getElementsByTagName("a");
-    var meList = document.getElementsByClassName("me");
-    for(var i=0; i<aList.length; i++){
-	    aList[i].onmouseover = function(){
-		        for(var m=0; m<meList.length; m++){
-			        if(m == this.getAttribute("title")){
-				        meList[m].style.display = "block";
-			        }
-			        else{
-				        meList[m].style.display = "none";
-			        }
-		        }
-		
-	    }
-    }
+	var nav = document.getElementById("nav");
+	var liList = nav.getElementsByTagName("li");
+	for(var i=0; i<liList.length; i++){
+		if(liList[i].getElementsByTagName("ul").length){
+			liList[i].onmouseover = function(){
+				this.getElementsByTagName("ul")[0].style.display = "block";
+			}
+			liList[i].onmouseout = function(){
+				this.getElementsByTagName("ul")[0].style.display = "none";
+			}
+		}
+	}
+	
 	
 	
 	/*轮播*/
@@ -63,6 +60,55 @@ window.onload = function(){
 		document.body.scrollTop = 0;
 		 
 	}
+	/* 目的地推荐*/
 	
-	
+	var tabtitle = document.getElementById("tabtitle");
+    var spanList = tabtitle.getElementsByTagName("span");
+    var tablist = document.getElementsByClassName("tablist");
+    for(var i=0; i<spanList.length; i++){
+	    spanList[i].onmouseover = function(){
+		    for(var j=0; j<spanList.length; j++){
+			    spanList[j].className = "";
+		    }
+		        this.className = "now";
+		        for(var m=0; m<tablist.length; m++){
+			        if(m == this.getAttribute("title")){
+				        tablist[m].style.display = "block";
+			        }
+			        else{
+				        tablist[m].style.display = "none";
+			        }
+		        }
+		
+	    }
+    }
+    /*周边游*/
+   var inp  = document.getElementsByClassName("inp")[0];
+   var opt = document.getElementsByClassName("opt")[0];
+   inp.onclick = function(){
+		if(opt.style.display == "block"){
+			opt.style.display = "none";
+		}else{
+			opt.style.display = "block";
+		}
+	}
+    
+    var opt = document.getElementById("opt");
+    var aList = opt.getElementsByTagName("a");
+    var content2 = document.getElementsByClassName("content2");
+    for(var i=0; i<aList.length; i++){
+	    aList[i].onclick = function(){
+		        for(var a=0; a<content2.length; a++){
+			        if(a == this.getAttribute("title")){
+				        content2[a].style.display = "block";
+			        }
+			        else{
+				        content2[a].style.display = "none";
+			        }
+		        }
+		
+	    }
+    }
+    
+    
 }
