@@ -1,5 +1,21 @@
 window.onload = function(){
-	
+	/*导航栏*/
+	 var nav = document.getElementById("nav");
+    var aList = nav.getElementsByTagName("a");
+    var meList = document.getElementsByClassName("me");
+    for(var i=0; i<aList.length; i++){
+	    aList[i].onmouseover = function(){
+		        for(var m=0; m<meList.length; m++){
+			        if(m == this.getAttribute("title")){
+				        meList[m].style.display = "block";
+			        }
+			        else{
+				        meList[m].style.display = "none";
+			        }
+		        }
+		
+	    }
+    }
 	
 	
 	/*轮播*/
