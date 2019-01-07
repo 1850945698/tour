@@ -1,0 +1,217 @@
+
+/*面包屑*/
+.b_crumbs {
+    height: 46px;
+    z-index: 999;
+    width: 100%;
+    color: #666;
+    font-size: 12px;
+    font-family: tahoma;
+    margin-left: 153px;
+}
+.b_crumbs .item {
+    float: left;
+    display: inline;
+    line-height: 46px;
+    padding-right: 10px;
+    margin-right: 5px;
+}
+.item a {
+    color: #0069ca;
+    text-decoration: none;
+}
+.b_crumbs .item .e_arrow {
+    right: 0;
+    top: 1px;
+    font-family: simsun;
+}
+.item strong{
+	font-weight: normal;
+	font-size: 12px;
+}
+/*大标题*/
+.b_title {
+    position: relative;
+    z-index: 500;
+    left: -149px;
+    top: 20px;
+}
+.b_title .tit {
+    line-height: 36px;
+    font-family: "microsoft yahei";
+    font-size: 30px;
+    color: #333;
+    float: left;
+    display: inline;
+    font-weight: normal;
+}
+.b_title .e_collect {
+    float: right;
+    display: inline;
+    position: relative;
+    width: 80px;
+    height: 30px;
+    margin-left: 30px;
+    margin-top: 3px;
+    bottom: 0;
+    border: 1px solid #f80;
+    border-radius: 3px;
+    text-decoration: none;
+}
+.b_title .e_collect .collect-txt {
+    float: right;
+    width: 54px;
+    text-align: center;
+    color: #f80;
+    line-height: 30px;
+    font-size: 14px;
+    font-family: simsun;
+    
+}
+.b_title .e_collect .collect_icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 6px 0 6px 8px;
+    background: url() 0 0 no-repeat;
+}
+
+.connect .left{
+	float: left;
+	
+}
+.left .qximg{
+	position: absolute;
+	top: 268px;
+	left: 247px;
+}
+.left .scorebox{
+	background-color: #fff;
+	position: absolute;
+    top: 304px;
+    left: 770px;
+}
+.scorebox .cur_score {
+    float: left;
+    display: inline;
+    font-size: 30px;
+    font-family: "tahoma";
+    line-height: 30px;
+    color: #1badb6;
+}
+.scorebox .total_score {
+    float: left;
+    display: inline;
+    color: #666;
+    font-size: 16px;
+    line-height: 16px;
+    margin: 14px 0 0 5px;
+}
+.scorebox .total_star {
+    background: url(//source.qunarzz.com/site/images/travel/place/star_v3.jpg) no-repeat 0 -20px;
+    float: left;
+    display: inline;
+    width: 82px;
+    height: 14px;
+    line-height: 0;
+    font-size: 0;
+    margin: 16px 0 0 10px;
+    overflow: hidden;
+}
+.scorebox .cur_star {
+    background: url(//source.qunarzz.com/site/images/travel/place/star_v3.jpg) no-repeat 0 0;
+    float: left;
+    display: inline;
+    width: 82px;
+    height: 14px;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+}
+.txtbox {
+    background-color: #fff;
+    color: #666;
+    line-height: 25px;
+    margin-top: 150px;
+    margin-left: 775px;
+}
+.txtbox .sum {
+    color: #ff7400;
+    font-weight: bold;
+    margin: 0 5px;
+}
+.link {
+    color: #0069ca;
+}
+.commentbox {
+    background-color: #fff;
+    position: relative;
+    padding: 10px 20px 30px 30px;
+    width: 223px;
+    height: 100px;
+    overflow: hidden;
+    margin-left: 744px;
+}
+.commentbox .tit {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 30px;
+}
+.commentbox .cont {
+    margin-top: 10px;
+}
+.commentbox .more {
+    position: absolute;
+    right: 20px;
+    bottom: 50px;
+    float: right;
+    display: inline;
+    color: #0069CA;
+}
+.commentbox .txt {
+    display: inline;
+    line-height: 20px;
+}
+
+.countbox {
+    padding-top: 27px;
+    width: 240px;
+    line-height: 22px;
+    margin-left: 769px;
+}
+.box_l {
+    width: 49%;
+    text-align: center;
+    float: left;
+    display: inline;
+}
+.box_l .percent {
+    font-size: 24px;
+    font-family: "tahoma";
+    line-height: 24px;
+    color: #999;
+}
+.box_r {
+    width: 49%;
+    border-left: #e0e0e0 1px dotted;
+    text-align: center;
+    float: right;
+    display: inline;
+}
+.sum {
+    font-size: 24px;
+    font-family: "tahoma";
+    line-height: 24px;
+    color: #999;
+}
+.unit {
+    font-size: 12px;
+    font-family: "microsoft yahei";
+    line-height: 16px;
+}
+.txt {
+    margin-top: 10px;
+}
+.link_strategy {
+    color: #1badb6;
+}
