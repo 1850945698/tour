@@ -1,0 +1,169 @@
+/*顶部*/
+.header .right{
+	position: absolute;
+	font-family: "微软雅黑";
+	font-size: 18px;
+	top: 68px;
+	left: 326px;
+	color: #666666;
+}
+.header .boundary{
+	border: 1px solid #D8D8D8;
+	width: 82%;
+	position: absolute;
+	top: 107px;
+	left: 121px;
+}
+
+
+/*底部*/
+
+.footer .boundary{
+	position: absolute;
+	border: 1px solid #D8D8D8;
+    width: 1050px;
+    top: 756px;
+    left: 139px;
+}
+.footer .links{
+	position: absolute;
+	left: 439px;
+    top: 768px;
+}
+.footer .links a, .copyright span{
+    color: #999;
+    display: inline-block;
+    height: 22px;
+    line-height: 22px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.footer .links a:hover{
+	color: #f60;
+}
+.footer .copyright {
+	position: absolute;
+    line-height: 22px;
+    top: 811px;
+    left: 320px;
+}
+/*表单*/
+.content .bg{
+	background:  url(../img/pic/dlbg.jpg) no-repeat;
+	width: 100%;
+	height: 600px;
+	position: absolute;
+	top: 133px;
+}
+.content .tabform{
+	position: absolute;
+	width: 600px;
+	height: 414px;
+	background: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 3px #63C3D6;
+	top: 275px;
+	left: 382px;
+}
+.tabform .textbox-group{
+	width: 320px;
+	clear: both;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+.tabform .textbox-group input{
+	width: 306px;
+	height: 28px;
+	border: 1px solid #d8d8d8;
+	border-radius: 4px;
+	color: #666;
+	line-height: 28px;
+	padding: 6px 0 6px 12px;
+	outline: 0;
+	margin-top: 47px;
+    margin-left: -106px;
+}
+.tabform .textbox-group .submit{
+	width: 320px;
+	margin: 0 auto;
+	padding: 12px 0 0;
+}
+.content .btn {
+    background: #ff9c00;
+    height: 30px;
+    color: #fff;
+    width: 116px;
+    border: 0;
+    font-size: 14px;
+    margin-left: -19px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.tabform .right{
+	border-left: 1px solid #ebebeb;
+	position: absolute;
+	width: 208px;
+	height: 323px;
+	left: 433px;
+	top: 41px;
+}
+.tabform .right .welcome{
+	font-family: "arial";
+	font-size: 27px;
+	color: #1BADB6;
+	margin-left: 27px;
+	
+}
+.tabform .right .touxiang{
+	width: 180px;
+	height: 180px;
+	float: right;
+	padding-top: 68px;
+	
+}
+
+.tabform .right .touxiang img{
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.tabform .connect{
+	clear: both;
+	overflow: hidden;
+	margin-top: 30px;
+}
+.tabform .connect .hd{
+	width: 418px;
+	padding: 9px 0 20px 16px;
+	font-size: 12px;
+	color: #999;
+	border-top: 1px solid #EBEBEB;
+}
+.connect .bd{
+	padding: 0 0 0 104px;
+	width: 348px;
+	height: 84px;
+	overflow: hidden;
+}
+.connect a{
+	width: 58px;
+	height: 84px;
+	text-align: center;
+	font-size: 12px;
+	color: #999;
+	display: inline-block;
+	margin-right: 25px;
+	text-decoration: none;
+}
+.connect a .weibo i{
+	background-position: 0 0;
+}
+
+ .tabform .connect  a i{
+	width: 42px;
+	height: 42px;
+	background: url(../img/pic/dlzj.gif) no-repeat;
+	display: block;
+	margin: 0px 0 4px 10px;
+	cursor: pointer;
+}
