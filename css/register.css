@@ -21,7 +21,7 @@
 	clear: both;
 	position: absolute;
 	top: 181px;
-	left: 234px;
+	left: 207px;
 }
 .content .label{
 	font-family: "微软雅黑";
@@ -45,4 +45,61 @@
 	font-family: "微软雅黑";
 	line-height: 34px;
 	color: #333333;
+}
+.content .vcodeimg{
+	width: 96px;
+	height: 30px;
+	position: absolute;
+	left: 332px;
+	top: 289px;
+}
+.content .change{
+	position: absolute;
+	color: #1BADB6;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	left: 458px;
+	top: 292px;
+	text-decoration: none;
+}
+.content .btn{
+	background: #ff9c00;
+	height: 30px;
+	color: #fff;
+	width: 116px;
+	border: 0;
+	font-size: 14px;
+	margin-left: 121px;
+}
+.content .page-sidebar{
+	position: absolute;
+	width: 320px;
+	height: 455px;
+	left: 824px;
+	top: 215px;
+	float: left;
+}
+.content .page-sidebar .gpk2{
+	font-size: 14px;
+	font-family: "simsun";
+	color: #000000;
+}
+.content .page-sidebar .gpk2 ul{
+	padding-left: 14px;
+	
+}
+.content .page-sidebar .gpk2 ul li{
+	display: list-item;
+    padding-top: 41px;
+}
+.page-sidebar .gpk2 .h1{
+	color: #fd017c;
+	float: left;
+}
+.content .advertisingmap{
+	width: 320px;
+	height: 170px;
+	float: right;
+	margin-top: 40px;
+	
 }
