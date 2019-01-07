@@ -1,0 +1,15 @@
+.header .right{
+	position: absolute;
+	font-family: "微软雅黑";
+	font-size: 18px;
+	top: 68px;
+	left: 326px;
+	color: #666666;
+}
+.header .boundary{
+	border: 1px solid #3CB0D0;
+	width: 82%;
+	position: absolute;
+	top: 107px;
+	left: 121px;
+}
