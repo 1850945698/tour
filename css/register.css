@@ -1,3 +1,4 @@
+/*顶部*/
 .header .right{
 	position: absolute;
 	font-family: "微软雅黑";
@@ -12,4 +13,36 @@
 	position: absolute;
 	top: 107px;
 	left: 121px;
+}
+/*表单*/
+.content form{
+	float: left;
+	width: 615px;
+	clear: both;
+	position: absolute;
+	top: 181px;
+	left: 234px;
+}
+.content .label{
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #999999;
+	display: inline-block;
+	width: 80px;
+}
+.content .textbox-group{
+	color: #999999;
+	font-family: "微软雅黑";
+	height: 36px;
+	font-size: 0px;
+	margin-top: 44px;
+}
+.content .textbox{
+	height: 34px;
+	width: 244px;
+	font-size: 14px;
+	margin-left: -10px;
+	font-family: "微软雅黑";
+	line-height: 34px;
+	color: #333333;
 }
