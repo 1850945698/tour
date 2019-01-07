@@ -110,3 +110,34 @@
     padding-top: 5px;
     line-height: 23px;
 }
+/*底部*/
+
+.footer .boundary{
+	position: absolute;
+	border: 1px solid #1BADB6;
+    width: 1050px;
+    top: 719px;
+    left: 139px;
+}
+.footer .links{
+	position: absolute;
+	left: 439px;
+    top: 768px;
+}
+.footer .links a, .copyright span{
+    color: #999;
+    display: inline-block;
+    height: 22px;
+    line-height: 22px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.footer .links a:hover{
+	color: #f60;
+}
+.footer .copyright {
+	position: absolute;
+    line-height: 22px;
+    top: 811px;
+    left: 320px;
+}
