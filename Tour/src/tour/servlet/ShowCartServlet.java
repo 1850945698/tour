@@ -19,7 +19,7 @@ public class ShowCartServlet extends HttpServlet {
      */
     public ShowCartServlet() {
         super();
-        // TODO Auto-generated constructor stub
+        
     }
 
 	/**
