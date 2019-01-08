@@ -1,0 +1,61 @@
+/*底部*/
+
+.footer .boundary{
+	position: absolute;
+	border: 1px solid #1BADB6;
+    width: 1050px;
+    top: 1262px;
+    left: 139px;
+}
+.footer .links{
+	position: absolute;
+	left: 439px;
+    top: 1272px;
+}
+.footer .links a, .copyright span{
+    color: #999;
+    display: inline-block;
+    height: 22px;
+    line-height: 22px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.footer .links a:hover{
+	color: #f60;
+}
+.footer .copyright {
+	position: absolute;
+    line-height: 22px;
+    top: 1306px;
+    left: 320px;
+}
+/*面包屑*/
+.b_crumbs {
+    height: 46px;
+    z-index: 999;
+    width: 100%;
+    color: #666;
+    font-size: 12px;
+    font-family: tahoma;
+    margin-left: 153px;
+}
+.b_crumbs .item {
+    float: left;
+    display: inline;
+    line-height: 46px;
+    padding-right: 10px;
+    margin-right: 5px;
+}
+.item a {
+    color: #0069ca;
+    text-decoration: none;
+}
+.b_crumbs .item .e_arrow {
+    right: 0;
+    top: 1px;
+    font-family: simsun;
+}
+.item strong{
+	font-weight: normal;
+	font-size: 12px;
+}
