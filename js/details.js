@@ -1,4 +1,5 @@
 window.onload = function(){
+	/*导航栏*/
 	var ulList = document.getElementById("ullist");
 	var liList = ulList.getElementsByTagName("li");
 	for(var a=0; a<liList.length; a++){
