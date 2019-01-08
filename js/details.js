@@ -37,6 +37,11 @@ window.onload = function(){
 	}
 	
 	
-	
+	/*收藏*/
+	var collicon = document.getElementsByClassName("coll_icon")[0];
+	collicon.onclick = function(){
+		collicon.style.backgroundImg = "../img/pic/scstar.png";
+		collicon.style.backgroundPosition = "0px -24px";
+	}
 	
 }

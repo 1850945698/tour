@@ -88,7 +88,7 @@
     border-radius: 3px;
     text-decoration: none;
 }
-.b_title .e_collect .collect-txt {
+.coll_txt {
     float: right;
     width: 54px;
     text-align: center;
@@ -98,13 +98,15 @@
     font-family: simsun;
     
 }
-.b_title .e_collect .collect_icon {
+.coll_icon {
     display: inline-block;
     width: 18px;
     height: 18px;
-    margin: 6px 0 6px 8px;
-    background: url() 0 0 no-repeat;
+    margin: 5px 0 6px 3px;
+    background: url(../img/pic/scstar.png) 0 0 no-repeat;
+    background-position: 0 0;
 }
+
 
 .connect .left{
 	float: left;
