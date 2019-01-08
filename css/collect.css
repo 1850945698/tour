@@ -76,7 +76,12 @@
 	margin-left: 200px;
 	margin-top: 78px;
 	float: left;
+	border: 3px solid;
+	border-image: linear-gradient(#1badb6,#333)30 30;
 }
+
+
+
 .scenic_spot .scenic_spot_img{
 	margin-top: 30px;
     margin-left: 29px;
@@ -86,14 +91,7 @@
 	width: 153px;
 	height: 140px;
 }
-.scenic_spot_img img:hover{
-	animation: changbig 2s;
-}
-/*@keyframes changbig{
-	0%{transform: scale(1);}
-	50%{transform: scale(1.2);}
-	50%{transform: scale(1.1);}
-}*/
+
 .scenic_spot_txt{
 	
 }
@@ -109,7 +107,7 @@
 	-moz-transition: all 3s ease;
 	transition: all 3s ease;
 }
-/*@keyframes Glow{
+@keyframes Glow{
 	0%{text-shadow: 0 0 2px #FF7400;}
 	10%{text-shadow: 0 0 4px #FF7400;}
 	20%{text-shadow: 0 0 6px #FF7400;}
@@ -161,7 +159,7 @@
 	90%{text-shadow: 0 0 9px #FF9C00;}
 	95%{text-shadow: 0 0 11px #FF9C00;}
 	100%{text-shadow: 0 0 12px #FF9C00;}
-}*/
+}
 .scenic_spot_txt .news{
 	font-size: 16px;
 	font-family: "微软雅黑";
