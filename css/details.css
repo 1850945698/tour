@@ -4,13 +4,13 @@
 	position: absolute;
 	border: 1px solid #1BADB6;
     width: 1050px;
-    top: 910px;
+    top: 1262px;
     left: 139px;
 }
 .footer .links{
 	position: absolute;
 	left: 439px;
-    top: 920px;
+    top: 1272px;
 }
 .footer .links a, .copyright span{
     color: #999;
@@ -26,7 +26,7 @@
 .footer .copyright {
 	position: absolute;
     line-height: 22px;
-    top: 950px;
+    top: 1306px;
     left: 320px;
 }
 /*面包屑*/
@@ -299,14 +299,14 @@
 
 
 .ticket{
-    padding-top: 6px;
+    padding-top: 204px;
 }
 .ticket_info{
     padding-bottom: 20px;
 }
 .ticket_info dl {
     margin-top: -56px;
-    margin-left: 242px;
+    margin-left: 286px;
 }
 .ticket_info dt {
     width: 380px;
@@ -349,6 +349,7 @@ del {
     padding: 0 18px;
     line-height: 25px;
     display: block;
+    text-decoration: none;
 }
 
 .season{
@@ -357,4 +358,12 @@ del {
 }
 .season p{
 	color: #666;
+}
+.messeger .h1txt{
+	color: #34B9C2;
+	font-family: "微软雅黑";
+	font-weight: normal;
+	/*padding-top: 20px;*/
+    line-height: 47px;
+    font-size: 27px;
 }

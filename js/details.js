@@ -36,6 +36,7 @@ window.onload = function(){
 		intervalId = setInterval(changeImg, 3000);
 	}
 	
-	/*tab 切换*/
+	
+	
 	
 }
