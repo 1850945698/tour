@@ -63,9 +63,6 @@
 /*内容*/
 .scenic_spot{
 	
-	border-bottom: 1px dashed #D8D8D8;
-    width: 100%;
-    height: 158px;
 }
 .scenic_spot .scenic_spot_img{
 	margin-top: 30px;
@@ -108,4 +105,10 @@
 }
 .scenic_spot_dele .more:hover{
 	color: #1BADB6;
+}
+.scenic_spot .xian{
+	border:1px dashed #E0E0E0;
+	width: 980px;
+	margin-top: 50px;
+	margin-left: 166px;
 }
