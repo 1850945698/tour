@@ -59,3 +59,49 @@
 	font-weight: normal;
 	font-size: 12px;
 }
+
+/*内容*/
+.scenic_spot{
+	
+}
+.scenic_spot .scenic_spot_img{
+	margin-top: 30px;
+    margin-left: 249px;
+}
+.scenic_spot_img img{
+	width: 200px;
+	height: 133px;
+}
+.scenic_spot_txt{
+	
+}
+.scenic_spot_txt .scenic_spot_name{
+	font-size: 24px;
+	font-weight: normal;
+	font-family: "微软雅黑";
+	color: #FF6600;
+}
+.scenic_spot_txt .news{
+	font-size: 16px;
+	font-family: "微软雅黑";
+	color: #333333;
+	line-height: 44px;
+}
+.scenic_spot_txt .locale{
+	font-family: "微软雅黑";
+	font-size: 16px;
+	color: #666666;
+}
+.scenic_spot_dele{
+	
+}
+.scenic_spot_dele .more{
+	position: absolute;
+	font-family: "微软雅黑";
+	font-size: 15px;
+	color: #333333;
+	text-decoration: none;
+}
+.scenic_spot_dele .more:hover{
+	color: #1BADB6;
+}
