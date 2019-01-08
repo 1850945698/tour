@@ -14,4 +14,6 @@ window.onload = function(){
 		}
 		
 	}
+	/*鼠标移上图片效果*/
+	
 }
