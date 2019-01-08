@@ -1,4 +1,34 @@
+/*底部*/
 
+.footer .boundary{
+	position: absolute;
+	border: 1px solid #1BADB6;
+    width: 1050px;
+    top: 910px;
+    left: 139px;
+}
+.footer .links{
+	position: absolute;
+	left: 439px;
+    top: 920px;
+}
+.footer .links a, .copyright span{
+    color: #999;
+    display: inline-block;
+    height: 22px;
+    line-height: 22px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.footer .links a:hover{
+	color: #f60;
+}
+.footer .copyright {
+	position: absolute;
+    line-height: 22px;
+    top: 950px;
+    left: 320px;
+}
 /*面包屑*/
 .b_crumbs {
     height: 46px;
@@ -174,10 +204,16 @@
 }
 
 .countbox {
-    padding-top: 27px;
+    padding-top: 21px;
     width: 240px;
     line-height: 22px;
-    margin-left: 769px;
+    margin-left: 723px;
+}
+.countbox .countboxbg{
+	background: #EBEBEB;
+	border-top: 1px solid #D8D8D8;
+	width: 335px;
+	height: 82px;
 }
 .box_l {
     width: 49%;
@@ -193,7 +229,7 @@
 }
 .box_r {
     width: 49%;
-    border-left: #e0e0e0 1px dotted;
+    border-left: #fff 1px dotted;
     text-align: center;
     float: right;
     display: inline;
@@ -214,4 +250,111 @@
 }
 .link_strategy {
     color: #1badb6;
+}
+
+.b_detail_nav {
+    border-bottom: 1px solid #e0e0e0;
+    width: 720px;
+    margin-left: 224px;
+}
+.b_detail_nav ul {
+    overflow: hidden;
+    height: 52px;
+    width: 720px;
+}
+.nav_first {
+    font-size: 20px;
+}
+.b_detail_nav li {
+    display: inline-block;
+    font-size: 16px;
+    font-family: "microsoft yahei";
+    padding: 10px 0;
+}
+.b_detail_nav li .txt_box {
+    border-left: 1px solid #e0e0e0;
+    padding: 0 23px;
+}
+.txt_box a:hover{
+	color: #FF8800;
+}
+.b_detail_nav a {
+    color: #1badb6;
+}
+
+.detail_box {
+    color: #666;
+    width: 757px;
+    margin-left: 249px;
+   
+} 
+.section{
+	color: #666;
+}
+.e_db_content_box {
+    line-height: 25px;
+    padding-top: 8px;
+    padding-bottom: 22px;
+}
+
+
+.ticket{
+    padding-top: 6px;
+}
+.ticket_info{
+    padding-bottom: 20px;
+}
+.ticket_info dl {
+    margin-top: -56px;
+    margin-left: 242px;
+}
+.ticket_info dt {
+    width: 380px;
+    color: #666;
+}
+.old_price {
+    color: #999;
+    font-size: 14px;
+    width: 80px;
+    margin-left: 435px;
+    margin-top: -18px;
+}
+del {
+    text-decoration: none;
+}
+.rmb {
+    font-family: "Arial";
+    font-style: "normal";
+}
+.now_price {
+    width: 90px;
+    color: #999;
+    margin-left: 520px;
+    margin-top: -23px;
+}
+.price_txt {
+    color: #ff7400;
+    font-size: 18px;
+}
+.view_price{
+    position: absolute;
+    display: inline;
+    margin-left: 651px;
+    margin-top: -23px;
+}
+.e_view_price {
+    border-radius: 4px;
+    background-color: #34b9c2;
+    color: #fff;
+    padding: 0 18px;
+    line-height: 25px;
+    display: block;
+}
+
+.season{
+	margin-left: 244px;
+    margin-top: -119px;
+}
+.season p{
+	color: #666;
 }
