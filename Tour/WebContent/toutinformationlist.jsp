@@ -14,6 +14,7 @@
 		<td>景点名称</td>
 		<td>地址</td>
        	     <td>描述</td>
+       	     <td>操作</td>
 	</tr>
 	<c:forEach items="${page}" var="p">
 	<tr>
@@ -22,7 +23,7 @@
 		<td>${p.address}</td>
 	
 		<td>${p.description}</td>
-		<td><a href="CartServlet?book_id=${p.id}">添加</a></td>
+		<td><a href="CartServlet?id=${p.id}">添加</a></td>
 	</tr>
 	</c:forEach>
 

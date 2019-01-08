@@ -17,7 +17,7 @@ public class TourinformationDao {
 	public boolean addTourinformation(Tourinformation tif){
 		try{
 			Connection con=BaseDao.getCon();
-			PreparedStatement pstm=con.prepareStatement("insert into book(book_name,author,press) values(?,?,?)");
+			PreparedStatement pstm=con.prepareStatement("insert into tourinformation(name,address,description) values(?,?,?)");
 			pstm.setInt(1, tif.getId());;
 			pstm.setString(2, tif.getAddress());;
 			pstm.setString(3, tif.getDescription());
@@ -45,7 +45,7 @@ public class TourinformationDao {
 	public boolean updateTourinformation(Tourinformation tif){
 		try{
 			Connection con=BaseDao.getCon();
-			PreparedStatement pstm=con.prepareStatement("update book set book_name=?,author=?,press=? where book_id=?");
+			PreparedStatement pstm=con.prepareStatement("update tourinformation set name=?,address=?,description=? where id=?");
 			pstm.setInt(1, tif.getId());;
 			pstm.setString(2, tif.getAddress());;
 			pstm.setString(3, tif.getDescription());
@@ -70,11 +70,11 @@ public class TourinformationDao {
 	/*
 	 * 删除商品方法<根据id>
 	 */
-	public boolean deleteTourinformationByid(int book_id){
+	public boolean deleteTourinformationByid(int id){
 		try{
 			Connection con=BaseDao.getCon();
-			PreparedStatement pstm=con.prepareStatement("delete from book where book_id=?");
-			pstm.setInt(1, book_id);
+			PreparedStatement pstm=con.prepareStatement("delete from tourinformation where id=?");
+			pstm.setInt(1, id);
 			int rs=pstm.executeUpdate();
 			if(rs>0){
 				return true;
@@ -89,17 +89,17 @@ public class TourinformationDao {
 	/*
 	 * 验证该商品是否存�?<根据id>
 	 */
-	public boolean isExist(int book_id){
-		return findTourinformationById(book_id)==null?false:true;
+	public boolean isExist(int id){
+		return findTourinformationById(id)==null?false:true;
 	}
 	
 	/*
 	 * 验证该商品是否存�?<根据name>
 	 */
-	public boolean isExist(String book_name){
-		return findTourinformationByName(book_name)==null?false:true;
+	public boolean isExist(String name){
+		return findTourinformationByName(name)==null?false:true;
 	}
-	private Object findTourinformationByName(String book_name) {
+	private Object findTourinformationByName(String name) {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -107,11 +107,11 @@ public class TourinformationDao {
 	/*
 	 * 根据id查询相应商品
 	 */
-	public Tourinformation findTourinformationById(int book_id){
+	public Tourinformation findTourinformationById(int id){
 		try{
 			Connection con=BaseDao.getCon();
-			PreparedStatement pstm=con.prepareStatement("select * from book where book_id=?");
-			pstm.setInt(1, book_id);
+			PreparedStatement pstm=con.prepareStatement("select * from tourinformation where id=?");
+			pstm.setInt(1, id);
 			ResultSet rs=pstm.executeQuery();
 			Tourinformation tif=null;
 			while(rs.next()){
@@ -137,11 +137,11 @@ public class TourinformationDao {
 	/*
 	 * 根据name查询相应商品
 	 */
-	public Tourinformation findProductByName(String book_name){
+	public Tourinformation findProductByName(String name){
 		try{
 			Connection con=BaseDao.getCon();
-			PreparedStatement pstm=con.prepareStatement("select * from book where book_name=?");
-			pstm.setString(1, book_name);
+			PreparedStatement pstm=con.prepareStatement("select * from tourinformation where name=?");
+			pstm.setString(1, name);
 			ResultSet rs=pstm.executeQuery();
 			Tourinformation tif=null;
 			while(rs.next()){
@@ -168,7 +168,7 @@ public class TourinformationDao {
 		try{
 			List<Tourinformation> list=new ArrayList<Tourinformation>();
 			Connection con=BaseDao.getCon();
-			PreparedStatement pstm=con.prepareStatement("select * from book");
+			PreparedStatement pstm=con.prepareStatement("select * from tourinformation");
 			ResultSet rs=pstm.executeQuery();
 			Tourinformation tif=null;
 			while(rs.next()){
@@ -202,7 +202,7 @@ public class TourinformationDao {
 	public int findCountByPage(){
 		try{
 			Connection con=BaseDao.getCon();
-			PreparedStatement pstm=con.prepareStatement("select count(book_id) from book");
+			PreparedStatement pstm=con.prepareStatement("select count(id) from tourinformation");
 			ResultSet rs=pstm.executeQuery();
 			int count=0;
 			while(rs.next()){
@@ -222,11 +222,11 @@ public class TourinformationDao {
 	 * @param pageSize
 	 * @return
 	 */
-	public List<Tourinformation> findByPage(){
+	public List<Tourinformation> findByPage(int pageNum, int pageSize){
 		try{
 			List<Tourinformation> list=new ArrayList<Tourinformation>();
 			Connection con=BaseDao.getCon();
-			PreparedStatement pstm=con.prepareStatement("select * from book");
+			PreparedStatement pstm=con.prepareStatement("select * from tourinformation");
 			ResultSet rs=pstm.executeQuery();
 			Tourinformation tif=null;
 			while(rs.next()){

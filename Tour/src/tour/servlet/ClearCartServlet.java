@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import tour.service.UserService;
+import tour.service.UserService1;
 import tour.user.collcet.Collect;
 
 
@@ -36,7 +36,7 @@ public class ClearCartServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		 HttpSession session=request.getSession();
 	     Collect cart =(Collect)session.getAttribute("cart");
-	     UserService ps = new UserService();
+	     UserService1 ps = new UserService1();
 	     ps.clearCart(cart);
 	     response.sendRedirect("showCart");
 	}
