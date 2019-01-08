@@ -1,29 +1,29 @@
-package tour.servlet;
+package tour.user.servlet;
 
 import java.io.IOException;
+import java.util.List;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
+import tour.entity.Page;
 import tour.entity.Tourinformation;
 import tour.service.UserService1;
-import tour.user.collcet.Collect;
-
 
 /**
- * Servlet implementation class CartServlet
+ * Servlet implementation class TourinformationPageServlet
  */
-@WebServlet("/CartServlet")
-public class CartServlet extends HttpServlet {
+@WebServlet("/TourinformationPageServlet")
+public class TourinformationPageServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public CartServlet() {
+    public TourinformationPageServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -33,26 +33,24 @@ public class CartServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		request.setCharacterEncoding("UTF-8");
-		response.setCharacterEncoding("UTF-8");
-		response.setContentType("text/html; charset=UTF-8");
-		int id=Integer.parseInt(request.getParameter("id"));
-		System.out.println("id"+id);
-		UserService1 ps=new UserService1();
-//		User ps=new User();
-//		Product p=ps.findProductById(id);
-		Tourinformation tif=ps.findTourinformationById(id);
-		System.out.println(tif);
-		HttpSession session=request.getSession();
-		Collect c=(Collect)session.getAttribute("cart");
-		if(c==null) {
-			c=new Collect();
-		}
-		c.addCartItem(tif);
-		
-		session.setAttribute("cart", c);
-		System.out.println();
-		request.getRequestDispatcher("ShowCartServlet").forward(request, response);
+		//获取请求页参数
+				String pageNum=request.getParameter("pageNum");
+				int num=0;
+				if(pageNum==null || pageNum.equals("")){
+					num=1;
+				}else{
+					num=Integer.parseInt(pageNum);
+				}
+				//调用业务逻辑层对象，处理结果实现跳转
+				UserService1 ps=new UserService1();
+				int count=ps.findCountByPage();
+				List<Tourinformation> list=ps.findByPage(num, 4);
+				Page<Tourinformation> tif=new Page<Tourinformation>(num,4);
+				tif.setList(list);
+				tif.setTotalCount(count);
+				request.setAttribute("page", tif);
+				request.getRequestDispatcher("tourinformationlist.jsp").forward(request, response);
+				
 	}
 
 	/**
