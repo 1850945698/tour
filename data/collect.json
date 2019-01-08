@@ -1,0 +1,47 @@
+{
+    "sceniclist":[
+        {
+          "name":"青秀山",
+          "news":"南宁最著名的自然景区，是踏青郊游，赏花与登高的好去处",
+          "locale":"南宁市青秀区青山路19号",
+          "img":"../img/pic/qxs.jpg",
+          "more":"了解更多",
+          "deleimg":"../img/pic/dele.png"
+        
+        },
+        {
+          "name":"广西民族博物馆",
+          "news":"观各种民族服饰和生活用品，赏世界最大的铜鼓“雷纹大铜鼓”",
+          "locale":"南宁市青环路11号",
+          "img":"../img/pic/qxs.jpg",
+          "more":"了解更多",
+          "deleimg":"../img/pic/dele.png"
+        
+        },
+        {
+          "name":"广西民族博物馆",
+          "news":"观各种民族服饰和生活用品，赏世界最大的铜鼓“雷纹大铜鼓”",
+          "locale":"南宁市青环路11号",
+          "img":"../img/pic/qxs.jpg",
+          "more":"了解更多",
+          "deleimg":"../img/pic/dele.png"
+        
+        },
+        {
+          "name":"广西民族博物馆",
+          "news":"观各种民族服饰和生活用品，赏世界最大的铜鼓“雷纹大铜鼓”",
+          "locale":"南宁市青环路11号",
+          "img":"../img/pic/qxs.jpg",
+          "more":"了解更多",
+          "deleimg":"../img/pic/dele.png"
+        
+        }
+    
+    
+    
+    
+    ]
+
+
+
+}
