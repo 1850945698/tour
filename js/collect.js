@@ -14,6 +14,16 @@ window.onload = function(){
 		}
 		
 	}
-	/*鼠标移上图片效果*/
-	
+	var nav = document.getElementById("nav");
+	var liList = nav.getElementsByTagName("li");
+	for(var i=0; i<liList.length; i++){
+		if(liList[i].getElementsByTagName("ul").length){
+			liList[i].onmouseover = function(){
+				this.getElementsByTagName("ul")[0].style.display = "block";
+			}
+			liList[i].onmouseout = function(){
+				this.getElementsByTagName("ul")[0].style.display = "none";
+			}
+		}
+	}
 }
