@@ -1,16 +1,17 @@
 window.onload = function(){
+	/*轮播*/
 	var bannerList = [
 		{
-			"imgsrc": "img/images/1.jpg"
+			"imgsrc": "../img/pic/qxs.jpg"
 		},
 		{
-			"imgsrc": "img/images/2.jpg"
+			"imgsrc": "../img/pic/qxs1.jpg"
 		},
 		{
-			"imgsrc": "img/images/3.jpg"
+			"imgsrc": "../img/pic/qxs2.jpg"
 		},
 		{
-			"imgsrc": "img/images/4.jpg"
+			"imgsrc": "../img/pic/qxs3.jpg"
 		}
 	]
 
@@ -23,14 +24,18 @@ window.onload = function(){
 		else {
 			index = index + 1;
 		}
+		
 		bannerimg.src = bannerList[index].imgsrc;
 	}
-	var intervalId = setInterval(changeImg,1000)
+	var intervalId = setInterval(changeImg,3000)
 
 	bannerimg.onmouseover = function() {
 		clearInterval(intervalId);
 	}
 	bannerimg.onmouseout = function() {
-		intervalId = setInterval(changeImg, 1000);
+		intervalId = setInterval(changeImg, 3000);
 	}
+	
+	/*tab 切换*/
+	
 }
