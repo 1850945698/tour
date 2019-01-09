@@ -68,14 +68,30 @@
 	/*background: linear-gradient(#ffff, #1badb6 , #0d9199);*/
 }
 .connect .title{
-	margin-left: 178px;
-    margin-top: 69px;
+	margin-left: 412px;
+    margin-top: 48px;
 }
 .connect .title .titletxt{
-	color: #333333;
-	font-size: 21px;
+	color: #808080;
+	font-size: 17px;
 	font-family: "Microsoft YaHei";
+	font-weight: normal;
 	
+}
+.title .fpllink{
+	position: absolute;
+    top: 198px;
+    left: 778px;
+}
+.title .fpllink .btn{
+	background: #50dd84;
+	width: 80px;
+	height: 31px;
+	border: 1px solid #fff;
+	border-radius: 10px;
+	color: #fff;
+	font-family: "微软雅黑";
+	font-size: 16px;
 }
 .note_ul .face{
 	position: absolute;
