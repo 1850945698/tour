@@ -86,6 +86,7 @@
 	border-radius: 50px;
 }
 .note_title{
+	
 	margin-left: 259px;
     margin-top: 27px;
 }
@@ -129,7 +130,7 @@
 	font-size: 13px;
 }
 .cont_time{
-	margin-left: 966px;
+	margin-left: 913px;
     margin-top: -19px;
 }
 .cont_time .pltime{
@@ -146,7 +147,13 @@
     margin-top: 45px;
     margin-left: 260px;
 }
-
+.note .fjline{
+	border: 1px dashed #E8E8E8;
+    width: 75%;
+    position: absolute;
+    top: 564px;
+    left: 155px;
+}
 /*波浪*/
 @keyframes move_wave {
     0% {
