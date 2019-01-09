@@ -51,7 +51,8 @@
 			    		    <input type="text" class="sskuang" placeholder="搜目的地" name="q" id="q">
 			    	    </div> 
                         <div class="ssa">
-                    	    <input type="submit" class="ssbtn" id="search" value=" " >
+                    	    <input type="submit" class="ssbtn" id="search" value="搜索">
+                    	    
                         </div>
 			    	</div>
 			    </div>

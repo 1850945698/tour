@@ -39,8 +39,6 @@ public class CartServlet extends HttpServlet {
 		int id=Integer.parseInt(request.getParameter("id"));
 		System.out.println("id"+id);
 		UserService1 ps=new UserService1();
-//		User ps=new User();
-//		Product p=ps.findProductById(id);
 		Tourinformation tif=ps.findTourinformationById(id);
 		System.out.println(tif);
 		HttpSession session=request.getSession();
@@ -48,11 +46,11 @@ public class CartServlet extends HttpServlet {
 		if(c==null) {
 			c=new Collect();
 		}
-		c.addCartItem(tif);
+		c.addCollectItem(tif);
 		
 		session.setAttribute("cart", c);
-		System.out.println();
-		request.getRequestDispatcher("ShowCartServlet").forward(request, response);
+		System.out.println(c);
+		request.getRequestDispatcher("showCart").forward(request, response);
 	}
 
 	/**
