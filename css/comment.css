@@ -61,3 +61,150 @@
 	font-weight: normal;
 	font-size: 12px;
 }
+/*内容*/
+.connect{
+	height: 1111px;
+	width: 100%;
+	/*background: linear-gradient(#ffff, #1badb6 , #0d9199);*/
+}
+.connect .title{
+	margin-left: 178px;
+    margin-top: 69px;
+}
+.connect .title .titletxt{
+	color: #333333;
+	font-size: 21px;
+	font-family: "Microsoft YaHei";
+	
+}
+.note_ul .face{
+	position: absolute;
+    left: 196px;
+    top: 278px;
+}
+.note_ul .face img{
+	border-radius: 50px;
+}
+.note_title{
+	margin-left: 259px;
+    margin-top: 27px;
+}
+.note_title .c33{
+	font-size: 16px;
+	font-family: "Microsoft YaHei";
+	color: #333333;
+	text-decoration: none;
+	font-weight: normal;
+}
+.person{
+	margin-left: 259px;
+    margin-top: 13px;
+}
+.person .note_name{
+	color: #34B9C2;
+	font-family: "Microsoft YaHei";
+	font-size: 12px;
+	text-decoration: none;
+}
+.person .time{
+	color: #666666;
+	font-size: 12px;
+	font-family: "Microsoft YaHei";
+}
+.cont_dl{
+	clear: left;
+    margin-left: 259px;
+    margin-top: 10px;
+}
+.cont_dl dt,dd{
+	float: left;
+}
+.cont_dl .detit{
+	color: #999999;
+	font-family: "microsoft yahei";
+	font-size: 12px;
+}
+.cont_dl dd{
+	color: #333;
+	font-size: 13px;
+}
+.imgul{
+	
+}
+.imgli{
+	float: left;
+	list-style: none;
+    margin-top: 45px;
+    margin-left: 260px;
+}
+
+
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    bottom: -1px;
+    /*background-image: linear-gradient(to top, #86377b 20%, #27273c 80%);*/
+}
+.bgTop {
+    z-index: 15;
+    opacity: 0.5;
+}
+.bgMiddle {
+    z-index: 10;
+    opacity: 0.75;
+}
+.bgBottom {
+    z-index: 5;
+}
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+.waveTop {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+   -webkit-animation: move-wave 3s;
+   -webkit-animation-delay: 1s;
+   animation-delay: 1s;
+}
+.waveMiddle {
+    background-size: 50% 120px;
+}
+.waveAnimation .waveMiddle {
+    animation: move_wave 10s linear infinite;
+}
+.waveBottom {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveBottom {
+    animation: move_wave 15s linear infinite;
+}
