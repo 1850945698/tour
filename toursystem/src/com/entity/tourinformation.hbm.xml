@@ -1,0 +1,23 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- 实体类配置文件 -->
+<hibernate-mapping package="com.entity">
+	<class name="tourinformation" table="tourinformation" lazy="true">
+		<id name="id" column="id" >
+			<generator class="identity">
+				
+			</generator>
+		</id>
+		
+		 <property name="name" column="name"></property>
+        <property name="taddress" column="taddress" ></property>
+	
+		<property name="tdescription" column="tdescription" >
+		<!-- <column name="" sql-type=""></column> -->
+		</property>
+       
+		
+	 
+	</class>
+</hibernate-mapping>
