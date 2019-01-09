@@ -8,9 +8,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.skishop.cart.Cart;
+import com.collect.Cart;
+import com.service.tourinformationservice;
+
 //import com.skishop.cart.Cart;
-import com.skishop.service.ProductService;
+
 
 /**
  * Servlet implementation class ClearCartServlet
@@ -33,8 +35,8 @@ public class ClearCartServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		 HttpSession session=request.getSession();
 	     Cart cart =(Cart)session.getAttribute("cart");
-	     ProductService ps = new ProductService();
-	     ps.clearCart(cart);
+	     tourinformationservice ts=new tourinformationservice();
+	     ts.clearCart(cart);
 	     response.sendRedirect("showCart");
 	}
 

@@ -6,38 +6,34 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>显示购物车</title>
+<title>景点收藏</title>
 </head>
 <body>
- <h1 align="center">购物车列表</h1>
+ <h1 align="center">收藏详情</h1>
    <c:if test="${empty(cart.map) }"> 
-        您还没购任何商品
+        您还没收藏景点
    </c:if>
    <c:if test="${!empty(cart.map) }"> 
        <table border="3" align="center">
        	 <tr>
-       	     <td>商品名称</td>
-       	     <td>商品描述</td>
-       	     <td>单价</td>
-       	     <td>数量</td>
-       	     <td>小计</td>
-       	     <td>操作</td>
+       	     <td>景点名称</td>
+       	     <td>景点地址</td>
+       	     <td>景点描述</td>
+       	     
        	 </tr>
        	  <c:forEach items="${cart.map}" var="entry">
        	  <tr>
-       	  	  <td>${entry.value.product.name}</td>
-       	      <td>${entry.value.product.description}</td>
-       	     <td>${entry.value.product.discountprice}</td>
-       	     <td><input type="text" name="count" value="${entry.value.count}" style="width: 50"/></td>
-       	     <td>${entry.value.price}</td>
-       	     <td><a href="deleteItem?id=${entry.value.product.id}">删除</a></td>
+       	  	  <td>${entry.value.tourinformation.name}</td>
+       	      <td>${entry.value.tourinformation.taddress}</td>
+       	     <td>${entry.value.tourinformation.tdescription}</td>
+       	    
+       	     <td><a href="deleteItem?id=${entry.value.tourinformation.id}">删除</a></td>
        	  </tr> 
        	  </c:forEach>
        	  
        	  <tr>
-       	  	  <td colspan="3">总价</td>
-       	     <td colspan="2">${cart.price}</td>
-       	     <td colspan="1"><a href="clearCart">清空购物车</a></td> 
+       
+       	     <td colspan="1"><a href="clearCart">清空收藏</a></td> 
        	  
        	  </tr>
        

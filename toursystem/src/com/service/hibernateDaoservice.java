@@ -1,7 +1,9 @@
 package com.service;
 
+import com.collect.Cart;
 import com.entity.user;
 import com.hibernateDao.hibernateDao;
+
 
 
 public class hibernateDaoservice {
@@ -15,5 +17,6 @@ public class hibernateDaoservice {
 		return hibernateDao.saveuser(u);
 		
 	}
-
+	
+	
 }

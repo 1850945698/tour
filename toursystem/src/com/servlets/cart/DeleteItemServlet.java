@@ -8,9 +8,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.skishop.cart.Cart;
+import com.collect.Cart;
+import com.service.tourinformationservice;
+
+
 //import com.skishop.cart.Cart;
-import com.skishop.service.ProductService;
+
 
 /**
  * Servlet implementation class DeleteItemServlet
@@ -34,8 +37,8 @@ public class DeleteItemServlet extends HttpServlet {
 		 int id = Integer.parseInt(request.getParameter("id"));
 		 HttpSession session=request.getSession();
 	     Cart cart =(Cart)session.getAttribute("cart");
-	     ProductService ps = new ProductService();
-	     ps.deleteCartItem(id, cart);
+	     tourinformationservice ts=new tourinformationservice();
+	     ts.deleteCartItem(id, cart);
 	     response.sendRedirect("showCart");
 
 	}

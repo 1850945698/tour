@@ -26,7 +26,7 @@ public class ShowCartServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.getRequestDispatcher("showcart.jsp").forward(request, response);
+		request.getRequestDispatcher("showcollect.jsp").forward(request, response);
 	}
 
 	/**

@@ -8,9 +8,9 @@
 		<meta charset="UTF-8">
 		<title>title</title>
 	</head>
-	<link rel="stylesheet" type="text/css" href="../css/common.css" />
-		<link rel="stylesheet" type="text/css" href="../css/reset.css" />
-		<link rel="stylesheet" type="text/css" href="../css/home.css" />
+	<link rel="stylesheet" type="text/css" href="${path }/static/css/common.css" />
+		<link rel="stylesheet" type="text/css" href="${path }/static/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="${path }/static/css/home.css" />
 	<body>
 		<div class="mybody">
 		    <div class="header">
@@ -28,15 +28,11 @@
 			    			<li>
 			    				<a href="##">目的地</a>
 			    			</li>
+			    			
 			    			<li>
-			    				<a href="##">分享</a>
-			    			</li>
-			    			<li>
-			    				<a href="##">我的</a>
+			    				<a href="${path}/showCart">我的收藏</a>
 			    				<ul class="me">
-			    					<li>
-			    						<a href="##">我的收藏</a>
-			    					</li>
+			    					
 			    					<li>
 			    						<a href="##">我的评论</a>
 			    						
@@ -60,19 +56,19 @@
 			        <div class="mainnav">
 			    		<ul>
 			    			<li class="now"> 
-			    				<img src="../img/pic/shouye.png" style="margin-top: 13px; margin-left: -21px;">
+			    				<img src="${path }/static/images/shouye.png" style="margin-top: 13px; margin-left: -21px;">
 			    				<a href="##">攻略首页</a>
 			    			</li>
 			    			<li>
-			    				<img src="../img/pic/mudidi.png" style="margin-left: -21px;">
+			    				<img src="${path }/static/images/mudidi.png" style="margin-left: -21px;">
 			    			 	<a href="##"> 目的地</a>
 			    			</li>
 			    			<li>
-			    				<img src="../img/pic/cjxc.png">
+			    				<img src="${path }/static/images/cjxc.png">
 			    				<a href="##">创建行程</a>
 			    			</li>
 			    			<li>
-			    				<img src="../img/pic/fbyj.png">
+			    				<img src="${path }/static/images/fbyj.png">
 			    				<a href="##">发表游记</a>
 			    			</li>
 			    		</ul>
@@ -82,10 +78,11 @@
 		    <div class="content">
 		    	<!--轮播-->
 			<div class="scroll">
+			
 		        <div class="container" id="container">
 			        <div>
 			        	<div class="lbimg">
-			        		<img src="../img/pic/lunbo1 .jpg" >
+			        		<img src="${path }/static/images/lunbo1 .jpg" >
 			        	</div>
 			        	<div class="title">
 			        		    <span class="span1">大理<span>
@@ -96,7 +93,7 @@
 			        </div>
 			        <div >
 			        	<div class="lbimg">
-			        	    <img src="../img/pic/lunbo2.jpg" />
+			        	    <img src="${path }/static/images/lunbo2.jpg" />
 			        	</div>
 			        	<div class="title">
 			        	    <span class="span1">伊斯坦布尔<span>
@@ -105,7 +102,7 @@
 			        </div>
 			        <div >
 			        	<div class="lbimg">
-			        	    <img src="../img/pic/lunbo3.jpg">
+			        	    <img src="${path }/static/images/lunbo3.jpg">
 			        	</div>
 			        	<div class="title">
 			        	    <span class="span1">南宁<span>
@@ -114,7 +111,7 @@
 			        </div>
 			        <div>
 			        	<div class="lbimg">
-			        	    <img src="../img/pic/lunbo4.jpg">
+			        	    <img src="${path }/static/images/lunbo4.jpg">
 			        	</div>
 			        	<div class="title">
 			        	    <span class="span1">福冈</span>
@@ -122,11 +119,15 @@
 			        	</div>
 			        </div>
 		        </div>
+		        
 	        </div>
 	  <!--轮播结束-->
 	        <div class="mddtj">
+	        
 	        	<div class="wrap">
+	        	
 	        		<div class="title">
+	     
 	        			<h2>目的地推荐</h2>
 	        			<ul class="rt" id="tabtitle">
 	        				<li class="title_item lf current">
@@ -145,29 +146,34 @@
 	        					<span class="title_tab" title="3">&nbsp;&nbsp;&nbsp;&nbsp;与雪山共舞</span>
 	        				</li>
 	        			</ul>
+	        			
 	        		</div>
 	        		<div class="tablist" style="display: block;">
 	        			<ul class="king lf">
 	        				<li class="list_bg" style="position: absolute; top: 42px; left: -20px;">
 	        					<a href="##" class="city_name">
 	        					    <span class="name">沉船湾</span>
-	        					    <img src="../img/pic/chengchuanwan.jpg" width="486px" height="376px" style="display: inline;" />
+	        					    <img src="${path }/static/images/chengchuanwan.jpg" width="486px" height="376px" style="display: inline;" />
+	        					    <a href="cart?tourinformationId=1">景点收藏</a>
 	        				    </a>
 	        				    <p class="detail">宋慧乔，宋钟基的相恋地</p>
+	        				    
 	        				</li>
 	        			</ul>
 	        			<ul class="kind lf">
 	        				<li class="list_small" style="position: absolute; left: 485px;">
 	        					<a href="##" class="city_name">
 	        						<span class="name" style="left: 86px;">岛屿湾</span>
-	        						<img src="../img/pic/daoyuwan.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<img src="${path }/static/images/daoyuwan.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<a href="cart?tourinformationId=2">景点收藏</a>
 	        					</a>
 	        					<p class="detail">来新西兰与鲸鱼海豚互动嬉戏</p>
 	        				</li>
 	        				<li class="list_small" style="position: absolute; left: 485px; top: 260px;">
 	        					<a href="##" class="city_name">
 	        						<span class="name" style="left: 86px;">苏梅岛</span>
-	        						<img src="../img/pic/shumeidao.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<img src="${path }/static/images/shumeidao.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<a href="cart?tourinformationId=3">景点收藏</a>
 	        					</a>
 	        					<p class="detail">水天一色的”椰林海岛“</p>
 	        				</li>
@@ -176,14 +182,16 @@
 	        				<li class="list_small" style="position: absolute; left: 728px;">
 	        					<a href="##" class="city_name">
 	        						<span class="name" style="left: 86px;">西岛</span>
-	        						<img src="../img/pic/xidao.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<img src="${path }/static/images/xidao.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<a href="cart?tourinformationId=4">景点收藏</a>
 	        					</a>
 	        					<p class="detail">久负盛名的三亚潜水圣地</p>
 	        				</li>
 	        				<li class="list_small" style="position: absolute; left: 728px; top: 260px;">
 	        					<a href="##" class="city_name">
 	        						<span class="name" style="left: 86px;">龙目岛</span>
-	        						<img src="../img/pic/longriddao.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<img src="${path }/static/images/longriddao.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<a href="cart?tourinformationId=5">景点收藏</a>
 	        					</a>
 	        					<p class="detail">拥有不输于巴厘岛的魅力</p>
 	        				</li>
@@ -192,14 +200,16 @@
 	        				<li class="list_small" style="position: absolute; left: 971px;">
 	        					<a href="##" class="city_name">
 	        						<span class="name" style="left: 86px;">小纳努亚岛</span>
-	        						<img src="../img/pic/xnnydao.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<img src="${path }/static/images/xnnydao.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<a href="cart?tourinformationId=6">景点收藏</a>
 	        					</a>
 	        					<p class="detail">斐济得天独厚的蓝色珊瑚礁沙滩</p>
 	        				</li>
 	        				<li class="list_small" style="position: absolute; left: 971px; top: 260px;">
 	        					<a href="##" class="city_name">
 	        						<span class="name" style="left: 86px;">汉密尔顿岛</span>
-	        						<img src="../img/pic/hmeddao.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<img src="${path }/static/images/hmeddao.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<a href="cart?tourinformationId=7">景点收藏</a>
 	        					</a>
 	        					<p class="detail">澳大利亚全球十大沙滩之一</p>
 	        				</li>
@@ -211,7 +221,8 @@
 	        				<li class="list_bg" style="position: absolute; top: 42px; left: -20px;">
 	        					<a href="##" class="city_name">
 	        					    <span class="name">乌鲁瓦图断崖</span>
-	        					    <img src="../img/pic/wlwtdc.jpg" width="486px" height="376px" style="display: inline;" />
+	        					    <img src="${path }/static/images/wlwtdc.jpg" width="486px" height="376px" style="display: inline;" />
+	        					    <a href="cart?tourinformationId=8">景点收藏</a>
 	        				    </a>
 	        				    <p class="detail">冲浪爱好者的冒险点</p>
 	        				</li>
@@ -220,14 +231,16 @@
 	        				<li class="list_small" style="position: absolute; left: 485px; top: 42px;">
 	        					<a href="##" class="city_name">
 	        						<span class="name" style="left: 86px;">巴特罗之家</span>
-	        						<img src="../img/pic/btlzj.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<img src="${path }/static/images/btlzj.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<a href="cart?tourinformationId=9">景点收藏</a>
 	        					</a>
 	        					<p class="detail">高迪式的大自然魔幻色彩</p>
 	        				</li>
 	        				<li class="list_small" style="position: absolute; left: 485px; top: 260px;">
 	        					<a href="##" class="city_name">
 	        						<span class="name" style="left: 86px;">小印度</span>
-	        						<img src="../img/pic/xyd.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<img src="${path }/static/images/xyd.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<a href="cart?tourinformationId=10">景点收藏</a>
 	        					</a>
 	        					<p class="detail">金碧辉煌的世界</p>
 	        				</li>
@@ -236,14 +249,16 @@
 	        				<li class="list_small" style="position: absolute; left: 728px; top: 41px;">
 	        					<a href="##" class="city_name">
 	        						<span class="name" style="left: 86px;">彩虹邨</span>
-	        						<img src="../img/pic/caihondun.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<img src="${path }/static/images/caihondun.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<a href="cart?tourinformationId=11">景点收藏</a>
 	        					</a>
 	        					<p class="detail">美丽的彩虹色建筑与活泼的操场</p>
 	        				</li>
 	        				<li class="list_small" style="position: absolute; left: 728px; top: 260px;">
 	        					<a href="##" class="city_name">
 	        						<span class="name" style="left: 86px;">伏见稻荷大社</span>
-	        						<img src="../img/pic/fjdhds.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<img src="${path }/static/images/fjdhds.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<a href="cart?tourinformationId=12">景点收藏</a>
 	        					</a>
 	        					<p class="detail">一座座朱红色的鸟居</p>
 	        				</li>
@@ -252,14 +267,16 @@
 	        				<li class="list_small" style="position: absolute; left: 971px; top: 41px;">
 	        					<a href="##" class="city_name">
 	        						<span class="name" style="left: 40px;">华新圣托里尼公园</span>
-	        						<img src="../img/pic/hxstlngy.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<img src="${path }/static/images/hxstlngy.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<a href="cart?tourinformationId=13">景点收藏</a>
 	        					</a>
 	        					<p class="detail">蓝白的色调的泰国“小希腊”</p>
 	        				</li>
 	        				<li class="list_small" style="position: absolute; left: 971px; top: 260px;">
 	        					<a href="##" class="city_name">
 	        						<span class="name" style="left: 86px;">澳门渔人码头</span>
-	        						<img src="../img/pic/amyrmt.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<img src="${path }/static/images/amyrmt.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<a href="cart?tourinformationId=14">景点收藏</a>
 	        					</a>
 	        					<p class="detail">在澳门假装住在罗马</p>
 	        				</li>
@@ -271,7 +288,8 @@
 	        				<li class="list_bg" style="position: absolute; top: 42px; left: -20px;">
 	        					<a href="##" class="city_name">
 	        					    <span class="name">大溪地</span>
-	        					    <img src="../img/pic/daxidi.jpg" width="486px" height="376px" style="display: inline;" />
+	        					    <img src="${path }/static/images/daxidi.jpg" width="486px" height="376px" style="display: inline;" />
+	        					    <a href="cart?tourinformationId=15">景点收藏</a>
 	        				    </a>
 	        				    <p class="detail">七彩海水迷人，热带风光美好</p>
 	        				</li>
@@ -280,14 +298,16 @@
 	        				<li class="list_small" style="position: absolute; left: 485px; top: 42px;">
 	        					<a href="##" class="city_name">
 	        						<span class="name" style="left: 86px;">巴厘岛</span>
-	        						<img src="../img/pic/balidao.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<img src="${path }/static/images/balidao.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<a href="cart?tourinformationId=16">景点收藏</a>
 	        					</a>
 	        					<p class="detail">领略巴厘岛的风情万种</p>
 	        				</li>
 	        				<li class="list_small" style="position: absolute; left: 485px; top: 260px;">
 	        					<a href="##" class="city_name">
 	        						<span class="name" style="left: 86px;">约克</span>
-	        						<img src="../img/pic/yeke.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<img src="${path }/static/images/yeke.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<a href="cart?tourinformationId=17">景点收藏</a>
 	        					</a>
 	        					<p class="detail">浓厚的中世纪色彩</p>
 	        				</li>
@@ -296,14 +316,16 @@
 	        				<li class="list_small" style="position: absolute; left: 728px; top: 41px;">
 	        					<a href="##" class="city_name">
 	        						<span class="name" style="left: 86px;">维也纳</span>
-	        						<img src="../img/pic/weiyena.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<img src="${path }/static/images/weiyena.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<a href="cart?tourinformationId=18">景点收藏</a>
 	        					</a>
 	        					<p class="detail">流动不止的音乐，惊艳的不止建筑</p>
 	        				</li>
 	        				<li class="list_small" style="position: absolute; left: 728px; top: 260px;">
 	        					<a href="##" class="city_name">
 	        						<span class="name" style="left: 86px;">普吉岛</span>
-	        						<img src="../img/pic/pujidao.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<img src="${path }/static/images/pujidao.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<a href="cart?tourinformationId=19">景点收藏</a>
 	        					</a>
 	        					<p class="detail">印度洋安达曼海上的一颗“明珠”</p>
 	        				</li>
@@ -312,14 +334,16 @@
 	        				<li class="list_small" style="position: absolute; left: 971px; top: 41px;">
 	        					<a href="##" class="city_name">
 	        						<span class="name" style="left: 86px;">皇后镇</span>
-	        						<img src="../img/pic/huanghouzhneg.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<img src="${path }/static/images/huanghouzhneg.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<a href="cart?tourinformationId=20">景点收藏</a>
 	        					</a>
 	        					<p class="detail">宛如少女在湖光山色里亭亭玉立</p>
 	        				</li>
 	        				<li class="list_small" style="position: absolute; left: 971px; top: 260px;">
 	        					<a href="##" class="city_name">
 	        						<span class="name" style="left: 86px;">毛里求斯</span>
-	        						<img src="../img/pic/mlqs.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<img src="${path }/static/images/mlqs.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<a href="cart?tourinformationId=21">景点收藏</a>
 	        					</a>
 	        					<p class="detail">印度洋上的“伊甸园”</p>
 	        				</li>
@@ -331,7 +355,8 @@
 	        				<li class="list_bg" style="position: absolute; top: 42px; left: -20px;">
 	        					<a href="##" class="city_name">
 	        					    <span class="name">日本的最高峰</span>
-	        					    <img src="../img/pic/rbzgf.jpg" width="486px" height="376px" style="display: inline;" />
+	        					    <img src="${path }/static/images/rbzgf.jpg" width="486px" height="376px" style="display: inline;" />
+	        					    <a href="cart?tourinformationId=22">景点收藏</a>
 	        				    </a>
 	        				    <p class="detail">玉扇倒悬东海天。富士白雪映朝阳</p>
 	        				</li>
@@ -340,14 +365,16 @@
 	        				<li class="list_small" style="position: absolute; left: 485px; top: 42px;">
 	        					<a href="##" class="city_name">
 	        						<span class="name" style="left: 56px;">神奇的黑白雪山</span>
-	        						<img src="../img/pic/sqdhbxs.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<img src="${path }/static/images/sqdhbxs.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<a href="cart?tourinformationId=23">景点收藏</a>
 	        					</a>
 	        					<p class="detail">宛如“巨龙”腾跃飞舞</p>
 	        				</li>
 	        				<li class="list_small" style="position: absolute; left: 485px; top: 260px;">
 	        					<a href="##" class="city_name">
 	        						<span class="name" style="left: 45px;">黄河源头最大的山</span>
-	        						<img src="../img/pic/hhytzdds.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<img src="${path }/static/images/hhytzdds.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<a href="cart?tourinformationId=24">景点收藏</a>
 	        					</a>
 	        					<p class="detail">活佛座前的最高侍者</p>
 	        				</li>
@@ -356,14 +383,16 @@
 	        				<li class="list_small" style="position: absolute; left: 728px; top: 41px;">
 	        					<a href="##" class="city_name">
 	        						<span class="name" style="left: 86px;">蜀山之王</span>
-	        						<img src="../img/pic/sszw.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<img src="${path }/static/images/sszw.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<a href="cart?tourinformationId=25">景点收藏</a>
 	        					</a>
 	        					<p class="detail">东方的阿尔卑斯</p>
 	        				</li>
 	        				<li class="list_small" style="position: absolute; left: 728px; top: 260px;">
 	        					<a href="##" class="city_name">
 	        						<span class="name" style="left: 86px;">西藏众山之父</span>
-	        						<img src="../img/pic/xzzszf.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<img src="${path }/static/images/xzzszf.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<a href="cart?tourinformationId=26">景点收藏</a>
 	        					</a>
 	        					<p class="detail">耸立陡峻，奇峰险仞</p>
 	        				</li>
@@ -372,21 +401,25 @@
 	        				<li class="list_small" style="position: absolute; left: 971px; top: 41px;">
 	        					<a href="##" class="city_name">
 	        						<span class="name" style="left: 56px;">欧洲中心的山脉</span>
-	        						<img src="../img/pic/azzxdsm.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<img src="${path }/static/images/azzxdsm.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<a href="cart?tourinformationId=27">景点收藏</a>
 	        					</a>
 	        					<p class="detail">高山冰雪，天地苍茫</p>
 	        				</li>
 	        				<li class="list_small" style="position: absolute; left: 971px; top: 260px;">
 	        					<a href="##" class="city_name">
 	        						<span class="name" style="left: 86px;">雪国乐园</span>
-	        						<img src="../img/pic/xgly.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<img src="${path }/static/images/xgly.jpg" width="224px"; height="160px"; style="display: inline;">
+	        						<a href="cart?tourinformationId=28">景点收藏</a>
 	        					</a>
 	        					<p class="detail">体验在悬崖峭壁上行走的乐趣</p>
 	        				</li>
 	        			</ul>
 	        			
 	        		</div>
+	        		
 	        	</div>
+	        	
 	        </div>
 	        
 	        <div class="around">
@@ -452,31 +485,36 @@
 	        				<li class="around_item">
 	        					<a href="##" class="city_name">
 	        						<span class="name">青秀山</span>
-	        						<img src="../img/pic/qxs.jpg" width="224px"; height="170px">
+	        						<img src="${path }/static/images/qxs.jpg" width="224px"; height="170px">
+	        						<a href="cart?tourinformationId=${t.id}">景点收藏</a>
 	        					</a>
 	        				</li>
 	        				<li class="around_item">
 	        					<a href="##" class="city_name">
 	        						<span class="name">中山路</span>
-	        						<img src="../img/pic/zsl.jpg" width="224px"; height="170px">
+	        						<img src="${path }/static/images/zsl.jpg" width="224px"; height="170px">
+	        						<a href="cart?tourinformationId=${t.id}">景点收藏</a>
 	        					</a>
 	        				</li>
 	        				<li class="around_item">
 	        					<a href="##" class="city_name">
 	        						<span class="name">广西民族博物馆</span>
-	        						<img src="../img/pic/gxmzbwg.jpg" width="224px"; height="170px">
+	        						<img src="${path }/static/images/gxmzbwg.jpg" width="224px"; height="170px">
+	        						<a href="cart?tourinformationId=${t.id}">景点收藏</a>
 	        					</a>
 	        				</li>
 	        				<li class="around_item">
 	        					<a href="##" class="city_name">
 	        						<span class="name">南湖公园</span>
-	        						<img src="../img/pic/nhgy.jpg" width="224px"; height="170px">
+	        						<img src="${path }/static/images/nhgy.jpg" width="224px"; height="170px">
+	        						<a href="cart?tourinformationId=${t.id}">景点收藏</a>
 	        					</a>
 	        				</li>
 	        				<li class="around_item">
 	        					<a href="##" class="city_name">
 	        						<span class="name">万象城</span>
-	        						<img src="../img/pic/wxc.jpg" width="224px"; height="170px">
+	        						<img src="${path }/static/images/wxc.jpg" width="224px"; height="170px">
+	        						<a href="cart?tourinformationId=${t.id}">景点收藏</a>
 	        					</a>
 	        				</li>
 	        			</ul>
@@ -486,31 +524,42 @@
 	        				<li class="around_item">
 	        					<a href="##" class="city_name">
 	        						<span class="name">漓江</span>
-	        						<img src="../img/pic/lj.jpg" width="224px"; height="170px">
+	        						<img src="${path }/static/images/lj.jpg" width="224px"; height="170px">
+	        						<a href="cart?tourinformationId=${t.id}">景点收藏</a>
 	        					</a>
 	        				</li>
 	        				<li class="around_item">
 	        					<a href="##" class="city_name">
+	        					<a href="cart?tourinformationId=${t.id}">景点收藏</a>
 	        						<span class="name">两江四湖</span>
-	        						<img src="../img/pic/ljsh.jpg" width="224px"; height="170px">
+	        						<img src="${path }/static/images/ljsh.jpg" width="224px"; height="170px">
+	        						
 	        					</a>
 	        				</li>
 	        				<li class="around_item">
 	        					<a href="##" class="city_name">
 	        						<span class="name">象山景区</span>
-	        						<img src="../img/pic/xsjq.jpg" width="224px"; height="170px">
+	        						<a href="cart?tourinformationId=${t.id}">景点收藏</a>
+	        					
+	        						<img src="${path }/static/images/xsjq.jpg" width="224px"; height="170px">
+	        						
 	        					</a>
 	        				</li>
 	        				<li class="around_item">
+	        				
 	        					<a href="##" class="city_name">
+	        					<a href="cart?tourinformationId=${t.id}">景点收藏</a>
 	        						<span class="name">遇龙河</span>
-	        						<img src="../img/pic/ylh.jpg" width="224px"; height="170px">
+	        						<img src="${path }/static/images/ylh.jpg" width="224px"; height="170px">
+	        						
 	        					</a>
 	        				</li>
 	        				<li class="around_item">
 	        					<a href="##" class="city_name">
+	        					<a href="cart?tourinformationId=${t.id}">景点收藏</a>
 	        						<span class="name">西街</span>
-	        						<img src="../img/pic/xj.jpg" width="224px"; height="170px">
+	        						<img src="${path }/static/images/xj.jpg" width="224px"; height="170px">
+	        						
 	        					</a>
 	        				</li>
 	        			</ul>
@@ -519,32 +568,42 @@
 	        			<ul class="list">
 	        				<li class="around_item">
 	        					<a href="##" class="city_name">
+	        					<a href="cart?tourinformationId=${t.id}">景点收藏</a>
 	        						<span class="name">北海老街</span>
-	        						<img src="../img/pic/bhlj.jpg" width="224px"; height="170px">
+	        						<img src="${path }/static/images/bhlj.jpg" width="224px"; height="170px">
+	        						
 	        					</a>
 	        				</li>
 	        				<li class="around_item">
 	        					<a href="##" class="city_name">
+	        					<a href="cart?tourinformationId=${t.id}">景点收藏</a>
 	        						<span class="name">银滩</span>
 	        						<img src="../img/pic/bhyt.jpg" width="224px"; height="170px">
+	        						
 	        					</a>
 	        				</li>
 	        				<li class="around_item">
 	        					<a href="##" class="city_name">
+	        					<a href="cart?tourinformationId=${t.id}">景点收藏</a>
 	        						<span class="name">涠洲岛</span>
-	        						<img src="../img/pic/wzd.jpg" width="224px"; height="170px">
+	        						<img src="${path }/static/images/wzd.jpg" width="224px"; height="170px">
+	        						
 	        					</a>
 	        				</li>
 	        				<li class="around_item">
 	        					<a href="##" class="city_name">
+	        					<a href="cart?tourinformationId=${t.id}">景点收藏</a>
 	        						<span class="name">北海公园</span>
-	        						<img src="../img/pic/bhgy.jpg" width="224px"; height="170px">
+	        						<img src="${path }/static/images/bhgy.jpg" width="224px"; height="170px">
+	        						
 	        					</a>
 	        				</li>
 	        				<li class="around_item">
 	        					<a href="##" class="city_name">
+	        					<a href="cart?tourinformationId=${t.id}">景点收藏</a>
 	        						<span class="name">天主教堂</span>
-	        						<img src="../img/pic/tzjt.jpg" width="224px"; height="170px">
+	        						<img src="${path }/static/images/tzjt.jpg" width="224px"; height="170px">
+	        						
 	        					</a>
 	        				</li>
 	        			</ul>
@@ -555,7 +614,8 @@
 	  
 		    </div>
 		    <div id="gotoTop" style="display: none;">
-	    	    <img src="../img/pic/up.png" style="width: 40px; height: 40px;">
+	    	    <img src="${path }/static/images/up.png" style="width: 40px; height: 40px;">
+	    	    
 	        </div>
 		    <div class="footer">
 		    	<div class="boundary"></div>
@@ -582,5 +642,6 @@
 		    </div>
 		</div>
 	</body>
+<script src="${path }/static/js/home.js"></script>
 
 </html>

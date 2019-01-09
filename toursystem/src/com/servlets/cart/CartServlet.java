@@ -8,9 +8,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.skishop.cart.Cart;
-import com.skishop.entity.Product;
-import com.skishop.service.ProductService;
+import com.collect.Cart;
+import com.entity.tourinformation;
+import com.service.tourinformationservice;
+
+
 
 /**
  * Servlet implementation class CartServlet
@@ -31,17 +33,18 @@ public class CartServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		int id=Integer.parseInt(request.getParameter("productId"));
-		ProductService ps=new ProductService();
-		Product p=ps.findProductById(id);
+		int id=Integer.parseInt(request.getParameter("tourinformationId"));
+		System.out.println(id);
+		tourinformationservice ts=new tourinformationservice();
+		tourinformation t=ts.findtourbyid(id);
 		HttpSession session=request.getSession();
 		Cart c=(Cart)session.getAttribute("cart");
 		if(c==null){
 			c=new Cart();
 		}
-		c.addCartItem(p);
+		c.addCartItem(t);
 		session.setAttribute("cart", c);
-		request.getRequestDispatcher("productlist").forward(request, response);
+		request.getRequestDispatcher("tourhomepage.jsp").forward(request, response);
 		
 		
 	}

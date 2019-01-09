@@ -9,6 +9,7 @@ import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
 import com.entity.evaluate;
+import com.entity.tourinformation;
 import com.entity.user;
 
 import com.util.HibernateUtil;
@@ -84,6 +85,59 @@ public class hibernateDao {
 		return count;
 	}
 
+	public tourinformation findtourbyid(int id){
+		Session session = null;
+		Transaction tran = null;
+		tourinformation t =null;
+		try {
+			session = HibernateUtil.openSession();
+			tran = session.beginTransaction();
+			// ---------------------------------
+
+			// 查找Product对象
+			//t= session.load(tourinformation.class, id);
+			
+			
+
+			Query query = session.createQuery("from tourinformation where id=?");
+
+			query.setInteger(0, id);
+		 t=(tourinformation) query.uniqueResult();
+		 System.out.println(t);
+			return t ;
+
+			// ---------------------------------
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+			tran.rollback();
+			return null;
+		} finally {
+			if (null != session) {
+				session.close();
+			}
+		}
+	
+		
+
+		}
+	
+	public static List<tourinformation> findall() {
+		Session session = HibernateUtil.openSession();
+		Transaction tran = session.beginTransaction();
+
+		Query query = session.createQuery("from tourinformation");
+		List<tourinformation> list = query.list();
+		System.out.println(list);
+		for (tourinformation em : list) {
+			System.out.println(em.getName());
+		}
+
+		return list;
+
+		// TODO Auto-generated method stub
+
+	}
 //	public int addPhoneUser(PhoneUser pu){
 //
 //		int count = 0;

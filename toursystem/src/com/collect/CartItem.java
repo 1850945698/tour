@@ -1,32 +1,19 @@
 package com.collect;
 
-import com.skishop.entity.Product;
+import com.entity.tourinformation;
 
 public class CartItem {
 	
-	private Product product;
-	private int count;
-	private int price;
-	public Product getProduct() {
-		return product;
+	private tourinformation tourinformation;
+	
+	
+	public tourinformation getTourinformation() {
+		return tourinformation;
 	}
-	public void setProduct(Product product) {
-		this.product = product;
+	public void setTourinformation(tourinformation tourinformation) {
+		this.tourinformation = tourinformation;
 	}
-	public int getCount() {
-		return count;
-	}
-	public void setCount(int count) {
-		
-		this.count = count;
-		this.price=this.product.getDiscountprice()*this.count;
-	}
-	public int getPrice() {
-		return price;
-	}
-	public void setPrice(int price) {
-		this.price = price;
-	}
+	
 	
 
 }

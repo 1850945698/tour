@@ -3,7 +3,8 @@ package com.collect;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.skishop.entity.Product;
+import com.entity.tourinformation;
+
 
 public class Cart {
 	private Map<Integer,CartItem> map=new HashMap<Integer,CartItem>();
@@ -15,16 +16,16 @@ public class Cart {
 		this.map = map;
 	}
 	
-	public void addCartItem(Product p){
-		if(map.containsKey(p.getId())){
-			CartItem ci=map.get(p.getId());
-			ci.setCount(ci.getCount()+1);
+	public void addCartItem(tourinformation t){
+		if(map.containsKey(t.getId())){
+			CartItem ci=map.get(t.getId());
+			
 			
 		}else{
 			CartItem ci=new CartItem();
-			ci.setProduct(p);
-			ci.setCount(1);
-			map.put(p.getId(), ci);
+			ci.setTourinformation(t);
+			
+			map.put(t.getId(), ci);
 			
 		}
 	}
