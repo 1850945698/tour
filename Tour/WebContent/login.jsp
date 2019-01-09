@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+ <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -13,6 +13,13 @@
 <!--webfonts-->
 <link href='http://fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 <!--//webfonts-->
+<script type="text/javascript">
+    var msg='${msg}';
+    if(msg!=null && msg!=''){
+    	alert(msg);
+    }
+    </script>
+</head>
 </head>
 <body>
 	<h1>旅游推荐推荐系统</h1>
@@ -25,8 +32,8 @@
 				<div class="clear"></div>
 				<div class="buttons">
 					<ul>
-						<li><a href="#" class="hvr-sweep-to-right">微信登录</a></li>
-						<li><a href="#" class="hvr-sweep-to-left">QQ登录</a></li>
+						<li><a href="home.jsp" class="hvr-sweep-to-right">微信登录</a></li>
+						<li><a href="home.jsp" class="hvr-sweep-to-left">QQ登录</a></li>
 						<div class="clear"></div>
 					</ul>
 				</div>

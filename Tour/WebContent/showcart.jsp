@@ -19,15 +19,16 @@
        	     <td>景点名称</td>
        	     <td>地址</td>
        	     <td>描述</td>
-       	     
+       	     <td>操作</td>
        	 </tr>
        	  <c:forEach items="${cart.map}" var="entry">
        	  <tr>
-       	  <td>${entry.value.tourinformation.id}</td>
-       	  	  <td>${entry.value.tourinformation.name}</td>
-       	      <td>${entry.value.tourinformation.address}</td>
-       	     <td>${entry.value.tourinformation.description}</td>
+       	  <td>${entry.value.tif.id}</td>
+       	  	  <td>${entry.value.tif.name}</td>
+       	      <td>${entry.value.tif.address}</td>
+       	     <td>${entry.value.tif.description}</td>
        	      <td><input type="text" name="count" value="${entry.value.count}" style="width: 20"/></td>
+       	      <td><a href="deleteItem?id=${entry.value.tif.id}">删除</a></td>
        	  </tr> 
        	  </c:forEach>
          
