@@ -1,0 +1,371 @@
+/*底部*/
+
+.footer .boundary{
+	position: absolute;
+	border: 1px solid #1BADB6;
+    width: 1050px;
+    top: 1262px;
+    left: 139px;
+}
+.footer .links{
+	position: absolute;
+	left: 439px;
+    top: 1272px;
+}
+.footer .links a, .copyright span{
+    color: #999;
+    display: inline-block;
+    height: 22px;
+    line-height: 22px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.footer .links a:hover{
+	color: #f60;
+}
+.footer .copyright {
+	position: absolute;
+    line-height: 22px;
+    top: 1306px;
+    left: 320px;
+}
+/*面包屑*/
+.b_crumbs {
+    height: 46px;
+    z-index: 999;
+    width: 100%;
+    color: #666;
+    font-size: 12px;
+    font-family: tahoma;
+    margin-left: 153px;
+}
+.b_crumbs .item {
+    float: left;
+    display: inline;
+    line-height: 46px;
+    padding-right: 10px;
+    margin-right: 5px;
+}
+.item a {
+    color: #0069ca;
+    text-decoration: none;
+}
+.b_crumbs .item .e_arrow {
+    right: 0;
+    top: 1px;
+    font-family: simsun;
+}
+.item strong{
+	font-weight: normal;
+	font-size: 12px;
+}
+/*大标题*/
+.b_title {
+    position: relative;
+    z-index: 500;
+    left: -149px;
+    top: 20px;
+}
+.b_title .tit {
+    line-height: 36px;
+    font-family: "microsoft yahei";
+    font-size: 30px;
+    color: #333;
+    float: left;
+    display: inline;
+    font-weight: normal;
+}
+.b_title .e_collect {
+    float: right;
+    display: inline;
+    position: relative;
+    width: 80px;
+    height: 30px;
+    margin-left: 30px;
+    margin-top: 3px;
+    bottom: 0;
+    border: 1px solid #f80;
+    border-radius: 3px;
+    text-decoration: none;
+}
+.coll_txt {
+    float: right;
+    width: 54px;
+    text-align: center;
+    color: #f80;
+    line-height: 30px;
+    font-size: 14px;
+    font-family: simsun;
+    
+}
+.coll_icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 5px 0 6px 3px;
+    background: url(../img/pic/scstar.png) 0 0 no-repeat;
+    background-position: 0 0;
+}
+
+
+.connect .left{
+	float: left;
+	
+}
+.left .qximg{
+	position: absolute;
+	top: 268px;
+	left: 247px;
+}
+.left .scorebox{
+	background-color: #fff;
+	position: absolute;
+    top: 304px;
+    left: 770px;
+}
+.scorebox .cur_score {
+    float: left;
+    display: inline;
+    font-size: 30px;
+    font-family: "tahoma";
+    line-height: 30px;
+    color: #1badb6;
+}
+.scorebox .total_score {
+    float: left;
+    display: inline;
+    color: #666;
+    font-size: 16px;
+    line-height: 16px;
+    margin: 14px 0 0 5px;
+}
+.scorebox .total_star {
+    background: url(//source.qunarzz.com/site/images/travel/place/star_v3.jpg) no-repeat 0 -20px;
+    float: left;
+    display: inline;
+    width: 82px;
+    height: 14px;
+    line-height: 0;
+    font-size: 0;
+    margin: 16px 0 0 10px;
+    overflow: hidden;
+}
+.scorebox .cur_star {
+    background: url(//source.qunarzz.com/site/images/travel/place/star_v3.jpg) no-repeat 0 0;
+    float: left;
+    display: inline;
+    width: 82px;
+    height: 14px;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+}
+.txtbox {
+    background-color: #fff;
+    color: #666;
+    line-height: 25px;
+    margin-top: 150px;
+    margin-left: 775px;
+}
+.txtbox .sum {
+    color: #ff7400;
+    font-weight: bold;
+    margin: 0 5px;
+}
+.link {
+    color: #0069ca;
+}
+.commentbox {
+    background-color: #fff;
+    position: relative;
+    padding: 10px 20px 30px 30px;
+    width: 223px;
+    height: 100px;
+    overflow: hidden;
+    margin-left: 744px;
+}
+.commentbox .tit {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 30px;
+}
+.commentbox .cont {
+    margin-top: 10px;
+}
+.commentbox .more {
+    position: absolute;
+    right: 20px;
+    bottom: 50px;
+    float: right;
+    display: inline;
+    color: #0069CA;
+}
+.commentbox .txt {
+    display: inline;
+    line-height: 20px;
+}
+
+.countbox {
+    padding-top: 21px;
+    width: 240px;
+    line-height: 22px;
+    margin-left: 723px;
+}
+.countbox .countboxbg{
+	background: #EBEBEB;
+	border-top: 1px solid #D8D8D8;
+	width: 335px;
+	height: 82px;
+}
+.box_l {
+    width: 49%;
+    text-align: center;
+    float: left;
+    display: inline;
+}
+.box_l .percent {
+    font-size: 24px;
+    font-family: "tahoma";
+    line-height: 24px;
+    color: #999;
+}
+.box_r {
+    width: 49%;
+    border-left: #fff 1px dotted;
+    text-align: center;
+    float: right;
+    display: inline;
+}
+.sum {
+    font-size: 24px;
+    font-family: "tahoma";
+    line-height: 24px;
+    color: #999;
+}
+.unit {
+    font-size: 12px;
+    font-family: "microsoft yahei";
+    line-height: 16px;
+}
+.txt {
+    margin-top: 10px;
+}
+.link_strategy {
+    color: #1badb6;
+}
+
+.b_detail_nav {
+    border-bottom: 1px solid #e0e0e0;
+    width: 720px;
+    margin-left: 224px;
+}
+.b_detail_nav ul {
+    overflow: hidden;
+    height: 52px;
+    width: 720px;
+}
+.nav_first {
+    font-size: 20px;
+}
+.b_detail_nav li {
+    display: inline-block;
+    font-size: 16px;
+    font-family: "microsoft yahei";
+    padding: 10px 0;
+}
+.b_detail_nav li .txt_box {
+    border-left: 1px solid #e0e0e0;
+    padding: 0 23px;
+}
+.txt_box a:hover{
+	color: #FF8800;
+}
+.b_detail_nav a {
+    color: #1badb6;
+}
+
+.detail_box {
+    color: #666;
+    width: 757px;
+    margin-left: 249px;
+   
+} 
+.section{
+	color: #666;
+}
+.e_db_content_box {
+    line-height: 25px;
+    padding-top: 8px;
+    padding-bottom: 22px;
+}
+
+
+.ticket{
+    padding-top: 204px;
+}
+.ticket_info{
+    padding-bottom: 20px;
+}
+.ticket_info dl {
+    margin-top: -56px;
+    margin-left: 286px;
+}
+.ticket_info dt {
+    width: 380px;
+    color: #666;
+}
+.old_price {
+    color: #999;
+    font-size: 14px;
+    width: 80px;
+    margin-left: 435px;
+    margin-top: -18px;
+}
+del {
+    text-decoration: none;
+}
+.rmb {
+    font-family: "Arial";
+    font-style: "normal";
+}
+.now_price {
+    width: 90px;
+    color: #999;
+    margin-left: 520px;
+    margin-top: -23px;
+}
+.price_txt {
+    color: #ff7400;
+    font-size: 18px;
+}
+.view_price{
+    position: absolute;
+    display: inline;
+    margin-left: 651px;
+    margin-top: -23px;
+}
+.e_view_price {
+    border-radius: 4px;
+    background-color: #34b9c2;
+    color: #fff;
+    padding: 0 18px;
+    line-height: 25px;
+    display: block;
+    text-decoration: none;
+}
+
+.season{
+	margin-left: 244px;
+    margin-top: -119px;
+}
+.season p{
+	color: #666;
+}
+.messeger .h1txt{
+	color: #34B9C2;
+	font-family: "微软雅黑";
+	font-weight: normal;
+	/*padding-top: 20px;*/
+    line-height: 47px;
+    font-size: 27px;
+}

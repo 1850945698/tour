@@ -5,6 +5,7 @@ import java.util.List;
 
 
 import tour.entity.Tourinformation;
+import tour.entity.User;
 import tour.user.collcet.Collect;
 import tour.user.dao.TourinformationDao;
 
@@ -90,5 +91,13 @@ public class UserService1 {
 //        CartItem item = cart.getContainer().get(id);
 //        item.setCount(count);
 //    }
+	public static boolean isExist(User pu) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	public static List<User> selectAllUser() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 }

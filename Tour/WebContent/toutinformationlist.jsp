@@ -23,7 +23,9 @@
 		<td>${p.address}</td>
 	
 		<td>${p.description}</td>
-		<td><a href="CartServlet?id=${p.id}">添加</a></td>
+		<!--  <td><a href="CartServlet?id=${p.id}">添加</a></td>-->
+		<td><a href="editItem?id=${p.id }">添加</a><br/><a href="deleteItem?id=${p.id}">删除</a></td>
+		
 	</tr>
 	</c:forEach>
 
