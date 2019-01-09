@@ -77,8 +77,9 @@
 	margin-left: 200px;
 	margin-top: 78px;
 	float: left;
-	border: 3px solid;
-	border-image: linear-gradient(#1badb6,#333)30 30;
+	box-shadow: -2px -2px 30px #999999;
+	/*border: 3px solid;*/
+	/*border-image: linear-gradient(#1badb6,#c57713)30 30;*/
 }
 
 
@@ -112,18 +113,18 @@
 	0%{text-shadow: 0 0 2px #FF7400;}
 	10%{text-shadow: 0 0 4px #FF7400;}
 	20%{text-shadow: 0 0 6px #FF7400;}
-	30%{text-shadow: 0 0 8px #FF9C00;}
-	40%{text-shadow: 0 0 9px #FF9C00;}
-	50%{text-shadow: 0 0 10px #FF9C00;}
-	60%{text-shadow: 0 0 11px #FF9C00;}
+	30%{text-shadow: 0 0 8px #FF8800;}
+	40%{text-shadow: 0 0 9px #FF8800;}
+	50%{text-shadow: 0 0 10px #eb75cb;}
+	60%{text-shadow: 0 0 11px #eb75cb;}
 	65%{text-shadow: 0 0 1px #FF7400;}
 	70%{text-shadow: 0 0 2px #FF7400;}
 	75%{text-shadow: 0 0 3px #FF7400;}
-	80%{text-shadow: 0 0 5px #FF9C00;}
-	85%{text-shadow: 0 0 7px #FF9C00;}
-	90%{text-shadow: 0 0 9px #FF9C00;}
-	95%{text-shadow: 0 0 11px #FF9C00;}
-	100%{text-shadow: 0 0 12px #FF9C00;}
+	80%{text-shadow: 0 0 5px #eb75cb;}
+	85%{text-shadow: 0 0 7px #eb75cb;}
+	90%{text-shadow: 0 0 9px #ff8800;}
+	95%{text-shadow: 0 0 11px #eb75cb;}
+	100%{text-shadow: 0 0 12px #ff8800;}
 	
 	
 }
@@ -131,35 +132,35 @@
 	0%{text-shadow: 0 0 2px #FF7400;}
 	10%{text-shadow: 0 0 4px #FF7400;}
 	20%{text-shadow: 0 0 6px #FF7400;}
-	30%{text-shadow: 0 0 8px #FF9C00;}
-	40%{text-shadow: 0 0 9px #FF9C00;}
-	50%{text-shadow: 0 0 10px #FF9C00;}
-	60%{text-shadow: 0 0 11px #FF9C00;}
+	30%{text-shadow: 0 0 8px #eb75cb;}
+	40%{text-shadow: 0 0 9px #eb75cb;}
+	50%{text-shadow: 0 0 10px #eb75cb;}
+	60%{text-shadow: 0 0 11px #eb75cb;}
 	65%{text-shadow: 0 0 1px #FF7400;}
 	70%{text-shadow: 0 0 2px #FF7400;}
 	75%{text-shadow: 0 0 3px #FF7400;}
-	80%{text-shadow: 0 0 5px #FF9C00;}
-	85%{text-shadow: 0 0 7px #FF9C00;}
-	90%{text-shadow: 0 0 9px #FF9C00;}
-	95%{text-shadow: 0 0 11px #FF9C00;}
-	100%{text-shadow: 0 0 12px #FF9C00;}
+	80%{text-shadow: 0 0 5px #eb75cb;}
+	85%{text-shadow: 0 0 7px #eb75cb;}
+	90%{text-shadow: 0 0 9px #eb75cb;}
+	95%{text-shadow: 0 0 11px #eb75cb;}
+	100%{text-shadow: 0 0 12px #eb75cb;}
 }
 @-moz-keyframes Glow{
 	0%{text-shadow: 0 0 2px #FF7400;}
 	10%{text-shadow: 0 0 4px #FF7400;}
 	20%{text-shadow: 0 0 6px #FF7400;}
-	30%{text-shadow: 0 0 8px #FF9C00;}
-	40%{text-shadow: 0 0 9px #FF9C00;}
-	50%{text-shadow: 0 0 10px #FF9C00;}
-	60%{text-shadow: 0 0 11px #FF9C00;}
+	30%{text-shadow: 0 0 8px #eb75cb;}
+	40%{text-shadow: 0 0 9px #eb75cb;}
+	50%{text-shadow: 0 0 10px #eb75cb;}
+	60%{text-shadow: 0 0 11px #eb75cb;}
 	65%{text-shadow: 0 0 1px #FF7400;}
 	70%{text-shadow: 0 0 2px #FF7400;}
 	75%{text-shadow: 0 0 3px #FF7400;}
-	80%{text-shadow: 0 0 5px #FF9C00;}
-	85%{text-shadow: 0 0 7px #FF9C00;}
-	90%{text-shadow: 0 0 9px #FF9C00;}
-	95%{text-shadow: 0 0 11px #FF9C00;}
-	100%{text-shadow: 0 0 12px #FF9C00;}
+	80%{text-shadow: 0 0 5px #eb75cb;}
+	85%{text-shadow: 0 0 7px #eb75cb;}
+	90%{text-shadow: 0 0 9px #eb75cb;}
+	95%{text-shadow: 0 0 11px #eb75cb;}
+	100%{text-shadow: 0 0 12px #eb75cb;}
 }
 .scenic_spot_txt .news{
 	font-size: 16px;
@@ -190,9 +191,4 @@
 .scenic_spot_dele .more:hover{
 	color: #1BADB6;
 }
-/*.scenic_spot .xian{
-	border:1px dashed #E0E0E0;
-	width: 980px;
-	margin-top: 28px;
-	margin-left: 166px;
-}*/
+
